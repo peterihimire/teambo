@@ -1,0 +1,10 @@
+.grid-view {
+  display: grid;
+  grid-gap: 2rem;
+  text-align: left;
+
+  @include responsive(small-phone) {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 0;
+  }
+}

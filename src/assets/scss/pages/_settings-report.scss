@@ -1,0 +1,84 @@
+.settings-report {
+  &__date-filter {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color-3;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: $color-white;
+    border: 0.1rem solid $color-2;
+    border-radius: 0.8rem;
+  }
+
+  &__card {
+    padding: 3rem 2rem;
+    @include flex-row-jcbetween-aicenter;
+
+    &:nth-child(1) {
+      border-radius: 0.8rem 0 0 0.8rem;
+      border-right: 0.1rem solid $color-2;
+    }
+    &:nth-child(2) {
+      border-left: 0.1rem solid $color-2;
+      border-right: 0.1rem solid $color-2;
+    }
+    &:nth-child(3) {
+      border-radius: 0 0.8rem 0.8rem 0;
+      border-left: 0.1rem solid $color-2;
+    }
+
+    &.no-border {
+      &:nth-child(1) {
+        border-radius: 0;
+        border-right: none;
+      }
+      &:nth-child(2) {
+        border-left: none;
+        border-right: none;
+      }
+      &:nth-child(3) {
+        border-radius: 0;
+        border-left: none;
+      }
+    }
+
+    &.small {
+      width: 29.5rem;
+    }
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+
+  &__usage-stats,
+  &__other-stats--1,
+  &__other-stats--2 {
+    padding: 1.6rem;
+    background: $color-white;
+    border: 1px solid $color-2;
+    border-radius: 1.2rem;
+  }
+
+  &__other-stats--1 {
+    // margin-bottom: 2rem;
+  }
+
+  &__dummy {
+    display: grid;
+    place-items: center;
+    background-color: $color-31;
+    color: $color-white;
+    padding: 4rem;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    // overflow-x: scroll;
+  }
+}

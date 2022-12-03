@@ -1,0 +1,587 @@
+.header {
+  &__index-page {
+    background-image: url(./../../images/landingPageHeaderBg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    padding-top: 15rem;
+    padding-bottom: 30rem;
+  }
+  &__faq-page {
+    background-image: url(./../../images/faqHeaderBg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 236px;
+  }
+}
+.section {
+  &__faq {
+    padding: 0;
+
+    &__holder {
+      padding-left: 17rem;
+      padding-right: 17rem;
+    }
+  }
+}
+.head {
+  &-faq-1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 2.2rem;
+    color: $color-black;
+  }
+  &-faq-2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $color-black;
+  }
+}
+.p {
+  &-faq-1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $color-faq-1;
+  }
+}
+.faqcontent {
+  width: 60rem;
+}
+.faqtab {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.faqtab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 0px 16px 32px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Change background color of buttons on hover */
+.faqtab button:hover {
+  color: $color-34;
+}
+
+/* Create an active/current "tab button" class */
+.faqtab button.active {
+  color: $color-34;
+}
+
+// MEET FROM ANYWHERE SECTION
+.section {
+  &__meet_from-anywhere-2 {
+    background-color: white;
+    padding: 8rem 0;
+  }
+}
+.meet_from-anywhere-2-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-row-gap: 0rem;
+  grid-column-gap: 8rem;
+  border-radius: 10px;
+}
+.meet_from-anywhere-2-img-div {
+  display: flex;
+  justify-content: center;
+}
+.meet-anywhere-2-img {
+  width: 70%;
+}
+.meet_from-anywhere-2-btn-div {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+.meet_from-anywhere-2-sub-heading {
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0px !important;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-black;
+  text-align: center;
+}
+
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+  // MEET FROM ANYWHERE SECTION
+  .section {
+    &__meet_from-anywhere-2 {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .meet_from-anywhere-2-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+    border-radius: 10px;
+  }
+  .meet_from-anywhere-2-img-div {
+    display: flex;
+    justify-content: center;
+  }
+  .meet-anywhere-2-img {
+    width: 400px;
+  }
+  .meet_from-anywhere-2-btn-div {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+  }
+  .meet_from-anywhere-2-sub-heading {
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0px !important;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+    text-align: center;
+  }
+
+  // TIMBO TESTIMONIALS
+  .section {
+    &__timbo-testimonials {
+      background-color: #e1e1e1;
+      padding: 8rem 0;
+      // width: 90%;
+      // margin: 0 auto;
+    }
+  }
+
+  .timbo-testimonial-item {
+    background-color: #ffffff;
+    width: 740px !important;
+    height: 290px;
+    color: #1a1c1d !important;
+  }
+}
+
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  // MEET FROM ANYWHERE SECTION
+  .section {
+    &__meet_from-anywhere-2 {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .meet_from-anywhere-2-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+    border-radius: 10px;
+  }
+  .meet_from-anywhere-2-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .meet-anywhere-2-img {
+    width: 100%;
+  }
+  .meet_from-anywhere-2-btn-div {
+    display: flex;
+    justify-content: left;
+    margin: 0 0 0px 0;
+  }
+  .meet_from-anywhere-2-sub-heading {
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0px !important;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+    text-align: left;
+    width: 450px;
+  }
+  .btn-size {
+    height: 50px !important;
+    line-height: 50px !important;
+    padding: 0 0rem !important;
+    width: 180px;
+  }
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  // MEET FROM ANYWHERE SECTION
+  .section {
+    &__meet_from-anywhere-2 {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .meet_from-anywhere-2-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+    border-radius: 10px;
+  }
+  .meet_from-anywhere-2-img-div {
+    display: flex;
+    justify-content: center;
+  }
+  .meet-anywhere-2-img {
+    width: 400px;
+  }
+  .meet_from-anywhere-2-btn-div {
+    display: flex;
+    justify-content: left;
+    margin: 0 0 20px 0;
+  }
+  .main-heading-second-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: left;
+  }
+  .meet_from-anywhere-2-sub-heading {
+    font-style: normal;
+    font-weight: normal;
+    width: 100% !important;
+    letter-spacing: -0px !important;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+    text-align: left;
+  }
+}
+
+// TIMBO TESTIMONIALS
+.section {
+  &__timbo-testimonials {
+    background-color: #e1e1e1;
+    padding: 8rem 0;
+    color: #1a1c1d !important;
+  }
+}
+
+.timbo-testimonial-container {
+  margin: 0 auto !important;
+  width: 90%;
+}
+
+.timbo-testimonial-item {
+  background-color: #ffffff;
+  width: 740px !important;
+  height: 290px;
+  border-radius: 8px;
+}
+.timbo-content p {
+  text-align: center;
+}
+
+.timbo-content .testimonials-b {
+  text-align: right;
+}
+.timbo-img {
+  margin: 0 0 2rem 0;
+}
+.timbo-img img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.timbo-content-text {
+  padding: 2rem 2rem;
+}
+.timbo-content-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+.timbo-card {
+  width: 90% !important;
+  margin: 5rem auto;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+}
+
+.timbo-round-blue {
+  background-color: #2664ec;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+}
+.timbo-b {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+  .timbo-card {
+    max-width: 700px !important;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+  }
+  .timbo-content-text {
+    padding: 4rem 2rem;
+  }
+  .timbo-round-blue {
+    background-color: #2664ec;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+  }
+  .timbo-b {
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  .timbo-card {
+    max-width: 700px !important;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+  }
+  .timbo-content-text {
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .timbo-round-blue {
+    background-color: #2664ec;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: -35px;
+  }
+  .timbo-b {
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+// HOME TESTIMONIALS
+
+.timbo-testimonials {
+  padding: 4rem 0;
+}
+.timbo-testimonials-head {
+  text-align: center !important;
+  width: 100%;
+  margin: 0 0 0rem 0;
+}
+
+.slick-btn-container {
+  margin: 0.5rem 0 0 0;
+}
+
+.timbo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimony-chev {
+  margin: 0 0.2rem;
+}
+.timbo-small-font {
+  font-size: var(--small-font);
+  color: var(--primary-color);
+}
+.timbo-medium-font {
+  font-size: var(--medium-font);
+  color: var(--dark-grey);
+}
+.star-icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+.star-icon {
+  padding: 0 5px;
+}
+.slideWrapper {
+  // so the ball on top will be shown fully if not it wont be shown completely
+  padding: 55px 0px;
+
+  .card {
+    height: 300px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    // ball on top set on active slide card
+    // the active slide has a class of swiper-slide-active
+    // put an additional className on the swiper, target the active slide class and the card in it, then use that to show the ::before element
+    // the additional class name is to prevent other swiper carousels on the app to have their active slides render this ball
+
+    //   &::before {
+    //     content: "";
+    //     width: 80px;
+    //     height: 80px;
+    //     border-radius: 50%;
+    //     background: rgb(60, 60, 245);
+    //     position: absolute;
+    //     top: -55px;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     z-index: 2;
+    //   }
+  }
+}
+
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+  .timbo-testimonials-head {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto 0rem auto !important;
+  }
+  .timbo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .slick-btn-container {
+    margin: 1rem 15rem 0 0;
+  }
+}
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  .timbo-testimonials-head {
+    text-align: center !important;
+    width: 100%;
+    margin: 0 auto 0rem auto;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .testimonials-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .slick-btn-container {
+    margin: 1rem 33rem 0 0;
+  }
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .main-heading-second-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: left !important;
+  }
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+}
+
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .main-heading-second-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: left;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+}
+
+// @include responsive(small-phone) {
+//     max-width: 11.9rem;
+//     max-height: 3.4rem;
+// }
+// @if $breakpoint == small-phone {
+//     @media only screen and (max-width: 28.75em) {
+//       @content;
+//     } // 460px
+//   }
+
+//   @if $breakpoint == phone {
+//     @media only screen and (max-width: 37.5em) {
+//       @content;
+//     } // 600px
+//   }
+
+//   @if $breakpoint == tab-port {
+//     @media only screen and (max-width: 56.25em) {
+//       @content;
+//     } // 900px
+//   }
+
+//   @if $breakpoint == tab-land-small {
+//     @media only screen and (max-width: 65.31em) {
+//       @content;
+//     } // 1045px
+//   }
+
+//   @if $breakpoint == tab-land-mini {
+//     @media only screen and (max-width: 66.6em) {
+//       @content;
+//     } // 1065px
+//   }
+
+//   @if $breakpoint == tab-land {
+//     @media only screen and (max-width: 75em) {
+//       @content;
+//     } // 1200px
+//   }
+
+//   @if $breakpoint == big-desktop {
+//     @media only screen and (min-width: 112.5em) {
+//       @content;
+//     } // 1800px
+//   }

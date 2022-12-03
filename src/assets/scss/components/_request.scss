@@ -1,0 +1,7 @@
+.request {
+  @include flex-row-jcbetween-aiend;
+
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,21 @@
+.support-settings {
+  & > * {
+    padding: $dashboard-layout-standard-padding;
+    overflow-y: auto;
+    height: calc(100vh - 8.4rem);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__left {
+    flex-basis: 36rem;
+    border-right: 1px solid #eceef5;
+  }
+  &__right {
+    flex-grow: 1;
+    // background-color: red;
+  }
+}

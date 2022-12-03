@@ -1,0 +1,63 @@
+.meeting-agenda {
+  @include flex-row;
+  //   margin-left: 5rem;
+  //   padding: {
+  //     bottom: 4rem;
+  //   }
+
+  &:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+
+  & > * {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__time {
+    height: 3.8rem;
+    width: 3.8rem;
+    flex-shrink: 0;
+
+    background: $color-white;
+    border: 1px solid $color-11;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+
+    &-icon {
+      max-height: 1.6rem;
+      max-width: 1.6rem;
+    }
+  }
+
+  &__duration {
+    text-align: center;
+  }
+
+  &__text {
+    &--1 {
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: $color-5;
+    }
+    &--2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: $color-3;
+    }
+    &--3 {
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: $color-5;
+    }
+  }
+
+  &__title {
+    //   text-align: center;
+  }
+}

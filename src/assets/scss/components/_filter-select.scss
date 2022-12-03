@@ -1,0 +1,44 @@
+$default-side-padding: 1rem;
+.filter-select {
+  padding-left: $default-side-padding;
+  padding-right: $default-side-padding;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(../../images/icon-select-dropdown.svg);
+  background-position: 95% 50%;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  padding-right: 5%;
+  border: none;
+
+  font-family: inherit;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.type-1 {
+    color: inherit;
+    background-color: $color-42;
+    width: 9.4rem;
+    height: 2.9rem;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: $color-35;
+    border-radius: 0.8rem;
+  }
+
+  &.type-2 {
+    background-color: $color-white;
+    width: 23.5rem;
+    height: 4.5rem;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2re;
+    color: $color-43;
+  }
+}

@@ -1,0 +1,53 @@
+$default-side-padding: 1rem;
+.search-input {
+  @include flex-row-aicenter;
+  background: $color-42;
+  border-radius: 0.8rem;
+  padding-left: $default-side-padding;
+  padding-right: $default-side-padding;
+
+  &__input {
+    flex-grow: 1;
+    padding: 0.8rem 0;
+    height: 100%;
+    margin-right: $default-side-padding;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.search-input-2 {
+  @include flex-row-aicenter;
+  background: transparent;
+
+  &__input {
+    flex-grow: 1;
+    padding: 0.8rem 0;
+    height: 100%;
+    margin-right: $default-side-padding;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-4;
+
+    &::placeholder {
+      // font-weight: bold;
+      // font-size: 1.6rem;
+      // line-height: 1.9rem;
+      // color: $color-4;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.user-contact {
+  @include flex-row-aicenter;
+
+  &__info {
+    margin-left: 1.5rem;
+  }
+  
+  &__link {
+    text-decoration: none;
+    /* display: block; */
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  &__cta {
+    margin-left: 0.8rem;
+    &--1 {
+      margin-left: auto;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.dropdown {
+  &__container {
+    background-color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  &__item {
+    padding: 1.5rem 2rem;
+    transition: 0.5s all ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: whitesmoke;
+    }
+  }
+}

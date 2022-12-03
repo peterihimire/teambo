@@ -1,0 +1,9 @@
+.logo {
+  max-width: 12.9rem;
+  max-height: 4.4rem;
+
+  @include responsive(small-phone) {
+    max-width: 11.9rem;
+    max-height: 3.4rem;
+  }
+}

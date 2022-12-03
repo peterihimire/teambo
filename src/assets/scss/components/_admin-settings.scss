@@ -1,0 +1,256 @@
+.admin-settings {
+  &__general-info {
+    @include flex-row-jcbetween-aicenter;
+    max-width: 60%;
+    animation: slideFromBottom 0.5s ease;
+
+    div {
+      width: 30%;
+      .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 17px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      /* Create a custom checkbox */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: 4px;
+        background-color: #eee;
+      }
+
+      /* On mouse-over, add a grey background color */
+      .container:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+
+      /* When the checkbox is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        background-color: #28c345;
+      }
+
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      /* Show the checkmark when checked */
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      /* Style the checkmark/indicator */
+      .container .checkmark:after {
+        left: 8px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    div.checker {
+      width: 100%;
+    }
+
+    // div {
+    //   width: 30%;
+    // }
+    // &.input-container,
+    // &.input__holder {
+    //   width: 100% !important;
+    // }
+    &__label {
+    }
+    &__input-value {
+    }
+    &__edit-btn {
+    }
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+.portions {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex-direction: row;
+  .left-portion {
+    position: relative;
+    height: 70vh;
+    width: 40%;
+    padding-right: 1em;
+    overflow-y: scroll !important;
+    div.sides {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-self: center;
+      padding: 0.5em;
+    }
+    div.sides:hover {
+      background: #f5f7fe;
+      border-left: 5px solid #6a80f5;
+    }
+    div.active {
+      background: #f5f7fe;
+      border-left: 5px solid #6a80f5;
+    }
+    div.poison {
+      width: 12px;
+      height: 12px;
+
+      border-radius: 50%;
+    }
+    .lightp {
+      background: #cccccc;
+    }
+    .darkp {
+      background: #17bf63;
+    }
+  }
+  .right-portion {
+    position: relative;
+    height: 50vh;
+    width: 60%;
+    padding: 1em;
+    textarea {
+      border: 1px solid #e6e6e6;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 100%;
+      height: 200px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+
+      resize: none;
+    }
+
+    button {
+      position: absolute;
+      right: 1.7em;
+      margin-top: -3.5em;
+    }
+  }
+}
+.admin-layout {
+  &__tabs-container {
+    div.answer {
+      padding: 0 !important;
+      margin-left: -2.5em;
+    }
+  }
+}
+.modals {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  padding-top: 40px;
+  input,
+  select {
+    border: 1.22894px solid #dae2ff !important;
+    padding: 0.5em;
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    border-radius: 6.14471px;
+    margin: 0 !important;
+  }
+  textarea {
+    border: 1.22894px solid #dae2ff !important;
+    padding: 0.5em;
+    width: 100%;
+    height: 130px;
+    box-sizing: border-box;
+    border-radius: 6.14471px;
+    margin: 0 !important;
+    resize: none;
+  }
+  input::placeholder {
+    color: #162a75 !important;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #eceef5 !important;
+  }
+  button {
+    position: relative;
+    width: 100% !important;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .twos {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    div {
+      width: 48% !important;
+      input {
+        width: 100% !important;
+      }
+    }
+  }
+}
+.modalsabt .close {
+  height: 32px !important;
+  width: 32px !important;
+  border-radius: 50%;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  font-size: 20px;
+  color: #232323;
+  background: hsl(210, 10%, 92%);
+  opacity: 0.7;
+}
+.modalsabt {
+  animation: slide-down 0.9s ease 1 !important;
+  background-color: white;
+  width: 35%;
+  z-index: 100;
+  margin: auto;
+  padding: 2em;
+  border-radius: 10px;
+}

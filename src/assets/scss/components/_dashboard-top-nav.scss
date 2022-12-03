@@ -1,0 +1,25 @@
+.dashboard {
+  &-top-nav {
+    padding: 2.15rem 2rem;
+    border-bottom: 1px solid $color-2;
+    @include flex-row-aicenter;
+    background-color: $color-white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    &__col-1 {
+      @include flex-row-aicenter;
+    }
+    &__col-last {
+      @include flex-row-aicenter;
+      margin-left: auto;
+
+      & > * {
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}

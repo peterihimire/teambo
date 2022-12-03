@@ -1,0 +1,55 @@
+.icon-links {
+  @include flex-row-aicenter;
+  transition: 0.4s;
+  background-color: transparent;
+  padding: 2rem;
+  text-decoration: none;
+
+
+
+  &__badge {
+    align-self: flex-start;
+    margin-left: auto;
+  }
+
+  &__icon {
+    &-path {
+      transition: 0.4s;
+    }
+  }
+
+  &__title {
+    transition: 0.4s;
+  }
+
+  &.active {
+    background-color: $color-white;
+
+    .icon-links__icon {
+      &-path {
+        fill: $color-primary;
+      }
+    }
+    .icon-links__title {
+      color: $color-primary;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-white;
+
+    .icon-links__icon {
+      &-path {
+        fill: $color-primary;
+      }
+    }
+    .icon-links__title {
+      color: $color-primary;
+    }
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #eeeeee;
+  }
+}

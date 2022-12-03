@@ -1,0 +1,35 @@
+.switch {
+  width: 4rem;
+  height: 2.2rem;
+  background: $color-3;
+  border-radius: 1.2rem;
+  position: relative;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: 0.4s;
+  border: none;
+
+  &__button {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: $color-white;
+    box-shadow: 0 0.6rem 2rem $color-22;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.4rem;
+    transition: 0.4s;
+
+    &.on {
+      transform: translateX(100%);
+    }
+  }
+
+  &.on {
+    background: $color-primary;
+
+    &.bg-red {
+      background-color: $color-50;
+    }
+  }
+}

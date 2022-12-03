@@ -1,0 +1,46 @@
+.start-conference-card {
+  background: $color-primary;
+  border-radius: 1.8rem;
+  padding: 4rem 3rem 5rem;
+  width: 52.9rem;
+
+  @include flex-row-jcbetween-aicenter;
+
+  background-image: url(./../../images/conf-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+
+  &__typo {
+    flex-basis: 70%;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-white;
+    margin-bottom: 1rem;
+  }
+
+  &__sub-heading {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color-20;
+  }
+
+  &__img {
+    width: 23.1rem;
+    height: 16.036rem;
+    display: block;
+    margin: 6rem auto;
+  }
+
+  &__typo-3 {
+    
+  }
+  &__typo-4 {
+   
+  }
+}

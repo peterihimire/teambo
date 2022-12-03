@@ -1,0 +1,351 @@
+.icon {
+  &-search {
+    max-height: 1.311rem;
+    max-width: 1.311rem;
+  }
+  &-times {
+    max-height: 1.049rem;
+    max-width: 1.049rem;
+  }
+  &-link {
+    max-height: 0.95rem;
+    max-width: 1.65rem;
+  }
+  &-message {
+    max-width: 1.6rem;
+    max-height: 1.3rem;
+  }
+  &-lock {
+    max-width: 1.3rem;
+    max-height: 1.6rem;
+  }
+  &-user {
+    max-width: 1.3rem;
+    max-height: 1.3rem;
+  }
+  &-check {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-lens {
+    @extend .icon-search;
+  }
+  &-share {
+    max-width: 1.7rem;
+    max-height: 1.9rem;
+  }
+  &-user-plus {
+    max-width: 1.8rem;
+    max-height: 1.4rem;
+  }
+  &-comment {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-bars {
+    max-width: 1.4rem;
+    max-height: 0.8rem;
+  }
+  &-mic {
+    max-width: 1.2rem;
+    max-height: 1.5rem;
+  }
+  &-camera {
+    max-width: 1.4rem;
+    max-height: 1rem;
+  }
+  &-phone-down {
+    max-width: 1.9rem;
+    max-height: 0.7rem;
+  }
+  &-settings-solid {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-comment-double {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-phone-right {
+    max-width: 1.4rem;
+    max-height: 1.4rem;
+  }
+  &-tri-dot {
+    max-width: 1.4rem;
+    max-height: 0.4rem;
+  }
+  &-link-2 {
+    max-width: 1.5rem;
+    max-height: 0.8rem;
+  }
+  &-send {
+    max-width: 1.4rem;
+    max-height: 1.4rem;
+  }
+  &-share-arrow {
+    max-width: 1.7rem;
+    max-height: 1.5rem;
+  }
+  &-attach {
+    max-width: 1.9rem;
+    max-height: 1.9rem;
+  }
+  &-docs {
+    max-width: 1.8rem;
+    max-height: 2rem;
+  }
+  &-voice {
+    max-width: 1.8rem;
+    max-height: 2rem;
+  }
+  &-bars-hor {
+    max-width: 1.5rem;
+    max-height: 1.8rem;
+  }
+  &-smiley {
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+  }
+  &-pen {
+    max-width: 1.4rem;
+    max-height: 1.4rem;
+  }
+  &-bar-vertical {
+    max-width: 1.4rem;
+    max-height: 1rem;
+  }
+  &-star {
+    max-width: 1.6rem;
+    max-height: 1.5rem;
+  }
+  &-comment-2 {
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+  }
+  &-agenda {
+    max-width: 1.5rem;
+    max-height: 1.8rem;
+  }
+  &-folder {
+    max-width: 1.8rem;
+    max-height: 1.4rem;
+  }
+  &-group {
+    max-width: 2rem;
+    max-height: 1.2rem;
+  }
+  &-file-download {
+    max-width: 4.1rem;
+    max-height: 4.8rem;
+  }
+  &-cloud {
+    max-width: 1.8rem;
+    max-height: 1.4rem;
+  }
+  &-backward {
+    max-width: 1.8rem;
+    max-height: 1.3rem;
+  }
+  &-meeting-time {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-plus {
+    max-width: 1.4rem;
+    max-height: 1.3rem;
+  }
+  &-tri-dot-vertical {
+    max-width: 1.4rem;
+    max-height: 0.4rem;
+  }
+  &-cancel-arrow {
+    max-width: 1.8rem;
+    max-height: 1.5rem;
+  }
+  &-message-small {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-share-screen {
+    max-width: 1.4rem;
+    max-height: 1.4rem;
+  }
+  &-facebook-sm {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-pinterest {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-twitter-sm {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-linkedin {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-google-sm {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-user-loud {
+    max-width: 1.8rem;
+    max-height: 1.5rem;
+  }
+  &-map {
+    max-width: 1.2rem;
+    max-height: 1.6rem;
+  }
+  &-circle-plus {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-trash {
+    max-width: 1.6rem;
+    max-height: 1.4rem;
+  }
+  &-calender-small {
+    max-width: 1.4rem;
+    max-height: 1.6rem;
+  }
+  &-calender-dark {
+    max-width: 1.4rem;
+    max-height: 1.6rem;
+  }
+  &-time-bold {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-trash-sm {
+    max-width: 1.5rem;
+    max-height: 1.3rem;
+  }
+  & {
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+  }
+  &-calender-sm {
+    max-width: 1.4rem;
+    max-height: 1.6rem;
+  }
+  &-video-calls {
+    max-width: 1.4rem;
+    max-height: 0.9rem;
+  }
+  &-messages-2 {
+    max-width: 1.1rem;
+    max-height: 1rem;
+  }
+  &-arrow-right {
+    max-width: 1rem;
+    max-height: 1.6rem;
+  }
+  &-plus-shadow {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  &-menu {
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+  }
+  &-notification {
+    max-width: 1.4rem;
+    max-height: 1.6rem;
+  }
+  &-location {
+    max-width: 1.4rem;
+    max-height: 1.6rem;
+  }
+  &-solid-time {
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+  }
+  &-circle {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+  &-upload {
+    max-width: 1.2rem;
+    max-height: 1.2rem;
+  }
+  &-search-input {
+    max-width: 1.6rem;
+    max-height: 1.7rem;
+  }
+  &-info-circle {
+    max-width: 1.6rem;
+    max-height: 1.7rem;
+  }
+  &-plus-white {
+    max-width: 2.1rem;
+    max-height: 2.1rem;
+  }
+  &-plan-check {
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+  }
+
+  &-feature-4 {
+    max-width: 4.8rem;
+    max-height: 4.8rem;
+  }
+  &-futa {
+    max-width: 3.7rem;
+    max-height: 3.7rem;
+  }
+  &-share-screen-blue {
+    max-width: 1.4rem;
+    max-height: 1.4rem;
+  }
+  &-participants {
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+  }
+  &-recording-down-caret {
+    max-width: 1.4rem;
+    max-height: 0.9rem;
+  }
+  &-recording-circle {
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+  }
+  &-video-record-start {
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+  }
+  &-video-record-end {
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+  }
+  &-message-open {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  }
+  & {
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+  }
+  & {
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+  }
+  &-delete {
+    max-width: 1.7rem;
+    max-height: 1.8rem;
+  }
+  &-cc {
+    height: 1.8rem;
+  }
+}
+.password{
+  &-eye{
+    max-width: 2.3rem;
+    max-height: 2.3rem;
+  }
+  &-eye-hide{
+    max-width: 2.3rem;
+    max-height: 2.3rem;
+  }
+}

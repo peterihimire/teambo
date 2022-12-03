@@ -1,0 +1,23 @@
+.empty-state {
+  &__img {
+    display: block;
+
+    margin: {
+      left: auto;
+      right: auto;
+      top: 7rem;
+      bottom: 5rem;
+    }
+  }
+  &__conference-img {
+    width: 23.1rem;
+    height: 18.42rem;
+    display: block;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 7rem;
+      bottom: 5rem;
+    }
+  }
+}

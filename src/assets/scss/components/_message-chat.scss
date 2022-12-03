@@ -1,0 +1,203 @@
+.message-chat {
+  @include flex-row;
+  height: calc(100vh - 8.4rem);
+
+  &__left {
+    flex-basis: 38.9rem;
+    flex-shrink: 0;
+    padding: $dashboard-layout-standard-padding;
+
+    overflow-y: auto;
+    background-color: $color-25;
+    // background-color: red;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__center {
+    flex-grow: 1;
+    @include flex-column-jcbetween;
+    padding: 0 !important;
+    // position: relative;
+    // max-height: calc(100vh - 15rem);
+    // background-color: green;
+    overflow-y: auto;
+
+    &__content {
+      flex-grow: 1;
+      //   background-color: red;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__right {
+    flex-basis: 29.7rem;
+    flex-shrink: 0;
+    // background-color: yellow;
+    border-left: 1px solid #eceef5;
+    padding: $dashboard-layout-standard-padding;
+    overflow-y: auto;
+
+    animation: fadeIn 1s ease;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__link {
+    @include flex-row;
+    padding: 1.2rem 1.5rem;
+    background-color: transparent;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &.active {
+      background-color: $color-white;
+    }
+    &:hover {
+      background-color: $color-white;
+    }
+  }
+
+  &__action {
+    flex-shrink: 0;
+  }
+
+  &__participant-details {
+    &__top {
+      @include flex-rowwrap-jcbetween-aicenter;
+    }
+  }
+
+  &__participant-info {
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__content-toggler-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    .group__name {
+      margin-left: 2rem;
+      text-overflow: ellipsis;
+      max-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  &__content-toggler {
+    @include flex-row-aicenter;
+    padding: 2rem 1rem 0.5rem;
+    flex-shrink: 0;
+    flex: none;
+    position: sticky;
+    top: 0;
+    background-color: $color-white;
+  }
+
+  &__content-toggle {
+    // cursor: pointer;
+    padding: 0.2rem 2rem 2rem;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    font-family: inherit;
+    &__text {
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: $color-4;
+      //   margin-top: .5rem;
+    }
+
+    &:active {
+      outline: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0.2rem;
+      bottom: 0;
+      left: 0;
+      background-color: $color-6;
+      //   visibility: hidden;
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    &:hover::after {
+      //   visibility: visible;
+      opacity: 1;
+      width: 100%;
+    }
+    &.active::after {
+      //   visibility: visible;
+      opacity: 1;
+      width: 100%;
+    }
+  }
+
+  &__content-toggle__badge {
+    position: absolute;
+    left: 110%;
+    top: -1rem;
+  }
+
+  &__toggle-icon {
+    position: relative;
+  }
+}
+
+.message-chats {
+  //   padding: 2rem 2.5rem;
+  @include flex-column-jcbetween;
+  flex-grow: 1;
+  height: 100%;
+  // overflow: auto;
+
+  &__discussions {
+    flex-grow: 1;
+    padding: 2rem 2.5rem;
+    // overflow: auto;
+  }
+
+  &__discussion-attachments {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+
+    .message-attachment {
+      height: 8.4rem;
+      width: 8.4rem;
+      border-radius: 1.2rem;
+      position: relative;
+      object-fit: cover;
+      cursor: pointer;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

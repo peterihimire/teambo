@@ -1,0 +1,18 @@
+.badge {
+  display: inline-block;
+  border-radius: 1.2rem;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  color: $color-white;
+
+  &.danger {
+    background-color: $color-27;
+  }
+  &.ok {
+    background-color: $color-13;
+  }
+  &.timbo {
+    background-color: $color-6;
+  }
+}

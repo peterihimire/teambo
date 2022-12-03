@@ -1,0 +1,40 @@
+.admin-dashboard {
+  &__stats {
+    @include flex-row;
+    column-gap: 3rem;
+  }
+
+  &__stats-details {
+    flex-grow: 1;
+  }
+  &__stats-aside {
+    flex-basis: 32.5rem;
+  }
+  &__stats-right {
+    @include flex-column;
+    padding: 2rem 2.5rem;
+    background: $color-white;
+    border-radius: 0.6rem;
+  }
+  &__stats__recent-users {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  &__stats-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+  &__stats-card {
+    background: $color-white;
+    border-radius: 0.6rem;
+    padding: 1.3rem 1.8rem;
+  }
+
+  &__chart {
+    background: $color-white;
+    border-radius: 0.6rem;
+    padding: 2rem 1.8rem;
+    margin-top: 2rem;
+  }
+}

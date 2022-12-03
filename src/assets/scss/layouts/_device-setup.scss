@@ -1,0 +1,21 @@
+.device-setup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+
+  & > * {
+    &:first-child {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0.3rem;
+        top: 0;
+        right: -2rem;
+        background-color: rgba(211, 211, 211, 0.809);
+        border-radius: 0.1rem;
+      }
+    }
+  }
+}

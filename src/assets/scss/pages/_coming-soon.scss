@@ -1,0 +1,81 @@
+.section {
+  &__coming-soon {
+    padding: 150px 0px 0px;
+    background: linear-gradient(
+        to bottom right,
+        rgba(70, 128, 255, 0.1),
+        rgba(246, 147, 62, 0.1)
+      ),
+      url(./../../images/hero-dark-bg.svg);
+
+    .coming-form {
+      border-radius: 0.5rem;
+      margin: 50px 0;
+
+      @media (max-width: 600px) {
+        margin: 30px 0;
+      }
+
+      input {
+        width: 300px;
+        padding: 1.7rem 1rem;
+        outline: none;
+        background-color: transparent;
+        border: solid grey 1px;
+        border-radius: 8px;
+        margin: 0 10px 0 0;
+        color: #fff;
+
+        @media (max-width: 600px) {
+          width: 90%;
+          margin: 0px 0px 10px 0px;
+        }
+      }
+    }
+
+    .coming-image-div {
+      align-items: center;
+    }
+
+    .coming-image {
+      @media (max-width: 600px) {
+        width: 100% !important;
+      }
+
+      @media (max-width: 900px) {
+        width: 80% !important;
+      }
+
+      @media (max-width: 1200px) {
+        width: 70% !important;
+      }
+    }
+    .btn-coming {
+      height: 50px !important;
+      line-height: 50px !important;
+      padding: 0 0rem !important;
+      width: 180px;
+
+      @media (max-width: 600px) {
+        width: 90%;
+      }
+    }
+    @media (max-width: 600px) {
+    }
+
+    .terms-content {
+      margin: 10px 0 60px 0;
+      padding: 60px;
+
+      @media (max-width: 600px) {
+      padding: 0px;
+
+      }
+    }
+    .terms-p {
+      color: white;
+      margin: 0 0 20px 0;
+      text-align: justify;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.dashboard {
+  &__side-nav {
+    height: 100vh;
+    background-color: $color-6;
+    padding: 2.15rem $dashboard-side-padding;
+    overflow-y: auto;
+    position: fixed;
+
+    // top: 0;
+
+    // flex-basis: 30rem;
+    flex-shrink: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__nav-logo {
+    max-width: 4.4rem;
+    max-height: 4.4rem;
+    border: 2px solid $color-19;
+    border-radius: 1rem;
+  }
+
+  &__navs {
+    margin-top: 10rem;
+    @include flex-column-aicenter;
+
+    &-icon {
+      max-width: 2.2rem;
+      max-height: 2.2rem;
+    }
+  }
+
+  &__nav {
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    // border: 1px solid #eceef5;
+    border-radius: 8px;
+    background-color: transparent;
+    position: relative;
+
+    &.active {
+      background-color: $color-white;
+    }
+
+    &-indicator {
+      position: absolute;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      display: inline-block;
+      top: -0.2rem;
+      right: -0.2rem;
+
+      &.ok {
+        background-color: $color-13;
+      }
+      &.warn {
+        background-color: $color-14;
+      }
+      &.bad {
+        background-color: red;
+      }
+    }
+  }
+}

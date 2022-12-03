@@ -1,0 +1,23 @@
+.switch-option {
+  @include flex-row-aicenter;
+  padding: {
+    top: 2rem;
+    bottom: 2rem;
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-1;
+  }
+
+  &__img {
+    margin-right: 2rem;
+  }
+
+  &__title {
+    transition: 0.4s;
+    &.active {
+      color: $color-4;
+    }
+  }
+  &__sub-title {
+  }
+}

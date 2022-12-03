@@ -1,0 +1,156 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // background-color: transparent;
+  // color: var(--main-white);
+  background-color: #1c1f2e;
+  transition: all 1s ease;
+  z-index: 10;
+  padding: 0 2rem;
+}
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.navbar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-btn img {
+  width: 30px;
+  height: 30px;
+}
+.navbar-btn {
+  background: none;
+  border: none;
+  padding: 0 !important;
+  outline: none;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-color) !important;
+}
+/* changes the navbar color upon a particular scroll position */
+.nav-color {
+  background-color: #1c1f2e;
+  transition: all 1s ease;
+}
+.side-nav-logo {
+  margin: 2rem 0 6rem 3rem;
+}
+.side-nav-links {
+  display: flex;
+  flex-direction: column;
+}
+.side-nav-link {
+  margin: 0 0 0.5rem 0;
+  font-family: lato-bold;
+  font-style: normal;
+  font-weight: bold;
+}
+.single-nav-link-div {
+  padding: 2rem 0 2rem 3rem;
+}
+.signup-bg {
+  background-color: white;
+  color: black;
+}
+.download-bg {
+  background-color: #28c345;
+  color: white;
+}
+.navlink-active {
+  color: $color-primary;
+}
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1f2e;
+    transition: all 1s ease;
+    z-index: 10;
+    padding: 0 2rem;
+    // color: var(--main-white);
+    /* box-shadow: var(--main-shadow); */
+  }
+
+  /* changes the navbar color upon a particular scroll position */
+  .nav-color {
+    background-color: #1c1f2e;
+    transition: all 1s ease;
+  }
+
+  .side-nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-nav-link {
+    margin: 0 0 0.5rem 0;
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .single-nav-link-div {
+    padding: 2rem 0 2rem 3rem;
+  }
+  .signup-bg {
+    background-color: white;
+    color: black;
+  }
+  .download-bg {
+    background-color: #28c345;
+    color: white;
+  }
+  .navlink-active {
+    color: $color-primary;
+  }
+}
+
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  .nav_static-pages {
+    background-color: transparent;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+
+    &__container {
+      @include flex-row-aicenter;
+      // column-gap: 3rem;
+
+      & > * {
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+  /* changes the navbar color upon a particular scroll position */
+  .nav-color {
+    background-color: #1c1f2e;
+    transition: all 1s ease;
+  }
+  .signup-btn {
+    border: solid white 1px;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  .navlink-active {
+    color: $color-primary;
+    font-size: 15px;
+  }
+}

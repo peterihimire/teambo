@@ -1,0 +1,176 @@
+.meeting {
+  &-toggler {
+    padding: 2rem $dashboard-side-padding 3rem;
+    @include flex-row-aicenter;
+  }
+  &-link {
+    text-decoration: none;
+  }
+  &-toggle-btn {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: $color-3;
+    cursor: pointer;
+    @include flex-row-aicenter;
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+
+    &__icon {
+      max-width: 1.35rem;
+      max-height: 1.501rem;
+      margin-right: 0.8rem;
+    }
+
+    &.active {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      color: $color-16;
+    }
+  }
+}
+
+.meeting-status {
+  padding: 0 $dashboard-side-padding 3rem;
+
+  &__toggler {
+    border-bottom: 1px solid $color-17;
+    display: inline-block;
+  }
+  &__toggle-btn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $color-3;
+    padding: 0 3rem 1rem;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      background-color: $color-6;
+      border-radius: 3px 3px 0px 0px;
+      transition: 0.3s;
+    }
+
+    &.active {
+      &::after {
+        height: 0.3rem;
+      }
+    }
+
+    &:hover {
+      &::after {
+        height: 0.3rem;
+      }
+    }
+  }
+}
+
+.meetings {
+  padding: 2rem $dashboard-side-padding;
+
+  &__card {
+    @include flex-row;
+    padding: 3rem 0 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-18;
+    }
+  }
+
+  &__date {
+    text-align: center;
+    padding-bottom: 4rem;
+    // margin-right: 1rem;
+  }
+
+  &__period {
+    font-weight: 500;
+    font-size: 1.44706rem;
+    line-height: 2.9rem;
+    color: $color-16;
+  }
+
+  &__day {
+    font-weight: 500;
+    font-size: 2.89412rem;
+    line-height: 3.9rem;
+    color: $color-16;
+  }
+
+  &__list {
+    flex-grow: 1;
+    // background-color: red;
+    @include flex-rowwrap;
+  }
+
+  &__detail {
+    @include flex-row;
+    margin-left: 5rem;
+    padding: {
+      bottom: 4rem;
+    }
+
+    & > * {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    &__time {
+      height: 3.8rem;
+      width: 3.8rem;
+
+      background: $color-white;
+      border: 1px solid $color-11;
+      border-radius: 1rem;
+      display: grid;
+      place-items: center;
+
+      &-icon {
+        max-height: 1.6rem;
+        max-width: 1.6rem;
+      }
+    }
+
+    &__duration {
+      text-align: center;
+    }
+
+    &__text {
+      &--1 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        color: $color-5;
+      }
+      &--2 {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: $color-3;
+      }
+      &--3 {
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        color: $color-5;
+      }
+    }
+
+    &__title {
+      //   text-align: center;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+// Scoped variable
+$transition-time: 0.4s;
+
+// main stlyes
+.admin-side-nav {
+  @include flex-column;
+  width: 24rem;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  background-color: $color-white;
+  border-right: 1px solid $color-32;
+  z-index: 5;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__top {
+    @include flex-row-jcbetween-aicenter;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+  }
+
+  &__link {
+    @include flex-row-aicenter;
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-33;
+    padding: 1.2rem 2rem;
+    background-color: transparent;
+    border-radius: 0.8rem;
+    transition: $transition-time;
+
+    &:hover,
+    &.active {
+      background-color: $color-34;
+      color: $color-white;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      .admin-side-nav__link-icon__path {
+        fill: $color-white;
+      }
+    }
+  }
+  &__link-icon {
+    transition: $transition-time;
+    margin-right: 1rem;
+
+    &__path {
+      transition: $transition-time;
+
+      &.active {
+        fill: $color-white;
+      }
+    }
+  }
+
+  &__container {
+    padding: 2rem 2.5rem;
+  }
+
+  &__divider {
+    border-bottom: 1px solid $color-32;
+  }
+
+  &__bottom {
+    margin-top: auto;
+    padding: 2rem 2.5rem;
+  }
+}

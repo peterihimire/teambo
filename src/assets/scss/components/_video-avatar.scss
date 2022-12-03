@@ -1,0 +1,42 @@
+.video-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: $color-3;
+  color: $color-white;
+  display: grid;
+  place-items: center;
+
+  &__text {
+    font-size: 5rem;
+    background-color: $color-56;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 10.25rem;
+    width: 10.25rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ch-featured-tile {
+  border: 0.3rem solid $color-primary;
+}
+
+.ch-subtitle {
+  font-size: 1.6rem !important;
+}
+
+.iSMmfk {
+  padding: 0.13rem 0 !important;
+}
+.ch-mic-icon {
+  width: 2.5rem !important;
+}
+
+.iSMmfk svg{
+  width: 2.4rem !important;
+}

@@ -1,0 +1,26 @@
+.modal {
+  // General modal styling
+  &__head {
+    @include flex-row-jcbetween-aicenter;
+  }
+  // Join a meeting modal
+  &-join-meeting {
+    &__head {
+    }
+
+    &__footer-text {
+      font-weight: normal;
+      font-size: 1.2rem;
+      line-height: 2.1rem;
+      color: $color-3;
+      margin-top: 2rem;
+    }
+  }
+
+  // Invite people modal
+  &-invite-people {
+    &__actions {
+      @include flex-row-jcbetween-aicenter;
+    }
+  }
+}

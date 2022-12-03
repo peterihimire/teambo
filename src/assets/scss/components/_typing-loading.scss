@@ -1,0 +1,24 @@
+.typing-loading {
+  @include flex-row-aicenter;
+
+  &__icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: $color-3;
+    animation: moveInRight 1.5s ease-in infinite both;
+
+    &:nth-child() {
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.4;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

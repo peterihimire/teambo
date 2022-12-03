@@ -1,0 +1,7 @@
+.support-tickect-card {
+  @include flex-row-aicenter;
+  padding: 2rem 2.2rem;
+  width: 32.5rem;
+  background-color: $color-34;
+  border-radius: 0.6rem;
+}

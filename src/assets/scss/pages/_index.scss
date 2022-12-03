@@ -1,0 +1,1610 @@
+// GET ACCESS KEEP MESSAGES SECTION
+.section {
+  &__get-access_keep-messages {
+    background-color: $color-60;
+    padding: 50px 0 0 0;
+  }
+
+  &__features {
+    @include flex-row-jcbetween;
+    gap: 5rem;
+  }
+
+  &__clientele {
+    padding: 7rem 0 20rem;
+    background-color: $color-53;
+  }
+
+  &__samples {
+    padding: 0 0 50rem;
+    background-image: url(./../../images/pic46.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  &__get-notified {
+    padding: 8rem;
+    background-color: $color-53;
+  }
+}
+
+.get-access-grid {
+  margin: 4rem 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+}
+.get-access {
+  padding: 5rem 0 0 0;
+}
+.get-access-item {
+  padding: 1rem 3rem;
+  height: 250px;
+  background-color: #2a2c35;
+  border-radius: 10px;
+}
+.get-access-title {
+  height: 60px;
+}
+.popular-logo {
+  border-radius: 4px;
+}
+.popular-icon {
+  color: var(--main-white);
+  font-size: 5rem;
+}
+
+.teams-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-35%);
+}
+
+.close-top-gap {
+  transform: translateY(-25rem);
+}
+
+.index-page__sub-heading {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.keep-messages__sub-heading {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.feature-img-holder {
+  max-width: 56rem;
+  max-height: 36rem;
+}
+.keep-msgs-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.main-heading-second {
+  font-family: lato-bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: $color-white;
+}
+
+.main-heading-second-b {
+  font-family: lato-bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: $color-black;
+  text-align: center;
+}
+
+// MEET FROM ANYWHERE SECTION
+.section {
+  &__meet_from-anywhere {
+    background-color: white;
+    padding: 8rem 0;
+  }
+}
+.meet_from-anywhere-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-row-gap: 0rem;
+  grid-column-gap: 8rem;
+  border: solid 2px rgb(187, 184, 184);
+  border-radius: 10px;
+  padding: 2rem 2rem;
+}
+.meet_from-anywhere-img-div {
+  display: flex;
+  justify-content: center;
+}
+.meet-anywhere-img {
+  width: 70%;
+}
+
+.meet-heading-b {
+  font-family: lato-bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: $color-black;
+  text-align: center !important;
+}
+.meet_from-anywhere-btn-div {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+.meet_from-anywhere-sub-heading {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0px !important;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: $color-black;
+  text-align: center;
+}
+// VARIETY PLAN SECTION
+.section {
+  &__variety-plan {
+    background-color: #1c1f2e;
+    padding: 8rem 0;
+  }
+}
+.variety-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 2rem;
+}
+.get-access {
+  padding: 5rem 0 0 0;
+}
+.variety-item {
+  margin: 6rem 0 0 0;
+  height: 476px;
+  background-color: #11131c;
+  border-radius: 10px;
+  position: relative;
+}
+.variety-header {
+  padding: 3rem 0 2rem 0;
+
+  margin: 0 0 1rem 0;
+  border-radius: 10px 10px 50% 50%;
+}
+.variety-p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: $color-2;
+}
+
+.variety-item:hover .variety-header {
+  background-color: $color-primary;
+}
+.variety-item:hover .transparent-hover-primary {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+}
+
+.switch-invisible {
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem auto 0rem auto;
+}
+
+.variety-item:hover {
+  transform: scale(1.07);
+  transition: all 0.3s linear;
+}
+.variety-text-content {
+  display: flex;
+  align-items: center;
+  margin: 0 0 2rem 0;
+  padding: 0rem 2rem;
+}
+.variety-text-content span {
+  margin-left: 1rem;
+}
+.variety-btn-div {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(-50%, -50%);
+}
+.variety-plan-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// TIMBO CAN BE USED WITH
+.section {
+  &__timbo_used-with {
+    background-color: $color-60;
+    padding: 8rem 0;
+  }
+}
+.trusted-companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trusted-company {
+  margin: 0 1rem;
+}
+.trusted-companies img {
+  width: 100%;
+}
+
+// VIDEO CONFERENCING
+.section {
+  &__video-conferencing {
+    background: linear-gradient(
+        to bottom right,
+        rgba(70, 128, 255, 0.1),
+        rgba(246, 147, 62, 0.1)
+      ),
+      url(./../../images/blue-video-rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+.video-conferencing-div {
+  display: flex;
+  flex-direction: column;
+}
+.video-conferencing-text-div {
+  width: 100%;
+}
+.video-conferencing-img-div {
+  display: flex;
+  justify-content: flex-end;
+}
+.video-conferencing-img {
+  width: 100%;
+}
+.video-conferencing-heading {
+  text-align: center;
+}
+.video-conferencing-paragraph {
+  text-align: center;
+}
+.video-conferencing-btn-div {
+  display: flex;
+  justify-content: center;
+}
+.timbo-partners {
+  @include flex-row-jccenter-aicenter;
+  column-gap: 8rem;
+}
+
+.plans-sub-heading {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timbo-plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.timbo-plan {
+  &:not(:last-child) {
+    border-right: 1px solid $color-32;
+  }
+  &:nth-child(1) {
+    padding-right: 4rem;
+  }
+  &:nth-child(2) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  &:nth-child(3) {
+    padding-left: 4rem;
+  }
+}
+
+.notification-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+  // GET ACCESS KEEP MESSAGES SECTION
+  .section {
+    &__get-access_keep-messages {
+      background-color: $color-60;
+      padding: 80px 0 0 0;
+    }
+
+    &__features {
+      @include flex-row-jcbetween;
+      gap: 5rem;
+    }
+
+    &__clientele {
+      padding: 7rem 0 20rem;
+      background-color: $color-53;
+    }
+
+    &__samples {
+      padding: 0 0 50rem;
+      background-image: url(./../../images/pic46.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+
+    &__get-notified {
+      padding: 8rem;
+      background-color: $color-53;
+    }
+  }
+
+  .get-access-grid {
+    margin: 4rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .get-access-item {
+    padding: 1rem 3rem;
+    height: 250px;
+    background-color: #2a2c35;
+    border-radius: 10px;
+  }
+  .get-access-title {
+    height: 60px;
+  }
+  .popular-logo {
+    border-radius: 4px;
+  }
+  .popular-icon {
+    color: var(--main-white);
+    font-size: 5rem;
+  }
+
+  .teams-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-35%);
+  }
+
+  .close-top-gap {
+    transform: translateY(-25rem);
+  }
+
+  .index-page__sub-heading {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .keep-messages__sub-heading {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .feature-img-holder {
+    max-width: 56rem;
+    max-height: 36rem;
+  }
+  .keep-msgs-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // transform: translateY(-35%);
+  }
+  .main-heading-second {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-white;
+  }
+
+  .main-heading-second-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: center;
+  }
+  // MEET FROM ANYWHERE SECTION
+  .section {
+    &__meet_from-anywhere {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .meet_from-anywhere-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+    border: solid 2px rgb(187, 184, 184);
+    border-radius: 10px;
+    padding: 6rem 6rem;
+  }
+  .meet_from-anywhere-img-div {
+    display: flex;
+    justify-content: center;
+  }
+  .meet-anywhere-img {
+    width: 400px;
+  }
+  .meet_from-anywhere-btn-div {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+  }
+
+  .meet-heading-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: center !important;
+  }
+
+  .meet_from-anywhere-sub-heading {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0px !important;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $color-black;
+    text-align: center;
+  }
+  // VARIETY PLAN SECTION
+  .section {
+    &__variety-plan {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+  .variety-grid {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 4rem;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .variety-item {
+    margin: 6rem 0 0 0;
+    height: 500px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .variety-header {
+    padding: 3rem 0 2rem 0;
+    margin: 0 0 1rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+  .variety-p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-2;
+  }
+
+  .variety-item:hover .variety-header {
+    background-color: $color-primary;
+  }
+  .variety-item:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .variety-item:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .variety-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 4rem;
+  }
+  .variety-text-content span {
+    margin-left: 1rem;
+  }
+  .variety-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // TIMBO CAN BE USED WITH
+  .section {
+    &__timbo_used-with {
+      background-color: $color-60;
+      padding: 8rem 0;
+    }
+  }
+  .trusted-companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trusted-company {
+    margin: 0 2rem;
+  }
+  .trusted-companies img {
+    width: 100%;
+  }
+
+  // VIDEO CONFERENCING
+  .section {
+    &__video-conferencing {
+      background: linear-gradient(
+          to bottom right,
+          rgba(70, 128, 255, 0.1),
+          rgba(246, 147, 62, 0.1)
+        ),
+        url(./../../images/blue-video-rectangle.svg);
+      // background-image: url(./../../images/landingPageHeaderBg.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+  }
+
+  .video-conferencing-div {
+    display: flex;
+  }
+  .video-conferencing-text-div {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .video-conferencing-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .video-conferencing-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .video-conferencing-heading {
+    text-align: center;
+  }
+  .video-conferencing-paragraph {
+    text-align: center;
+  }
+  .video-conferencing-btn-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .timbo-partners {
+    @include flex-row-jccenter-aicenter;
+    column-gap: 8rem;
+  }
+
+  .plans-sub-heading {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timbo-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .timbo-plan {
+    &:not(:last-child) {
+      border-right: 1px solid $color-32;
+    }
+    &:nth-child(1) {
+      padding-right: 4rem;
+    }
+    &:nth-child(2) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    &:nth-child(3) {
+      padding-left: 4rem;
+    }
+  }
+
+  .notification-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+  }
+}
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  // GET ACCESS KEEP MESSAGES SECTION
+  .section {
+    &__get-access_keep-messages {
+      background-color: $color-60;
+      padding: 0;
+      padding: 80px 0 0 0;
+    }
+
+    &__features {
+      @include flex-row-jcbetween;
+      gap: 5rem;
+    }
+
+    &__clientele {
+      padding: 7rem 0 20rem;
+      background-color: $color-53;
+    }
+
+    &__samples {
+      padding: 0 0 50rem;
+      background-image: url(./../../images/pic46.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+
+    &__get-notified {
+      padding: 8rem;
+      background-color: $color-53;
+    }
+  }
+
+  .get-access-grid {
+    margin: 4rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .get-access-item {
+    padding: 1rem 3rem;
+    height: 250px;
+    background-color: #2a2c35;
+    border-radius: 10px;
+  }
+  .get-access-title {
+    height: 60px;
+  }
+  .popular-logo {
+    border-radius: 4px;
+  }
+  .popular-icon {
+    color: var(--main-white);
+    font-size: 5rem;
+  }
+
+  .teams-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-35%);
+  }
+
+  .close-top-gap {
+    transform: translateY(-25rem);
+  }
+
+  .index-page__sub-heading {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .keep-messages__sub-heading {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .feature-img-holder {
+    max-width: 56rem;
+    max-height: 36rem;
+  }
+  .keep-msgs-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 60%;
+  }
+  .main-heading-second {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-white;
+  }
+
+  .main-heading-second-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.4rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: left;
+  }
+
+  // MEET FROM ANYWHERE SECTION
+  .section {
+    &__meet_from-anywhere {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .meet_from-anywhere-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+    border: solid 2px rgb(187, 184, 184);
+    border-radius: 10px;
+    padding: 6rem 6rem;
+  }
+  .meet_from-anywhere-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .meet-anywhere-img {
+    width: 400px;
+  }
+
+  .meet-heading-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    margin-top: 0 !important;
+    text-align: center !important;
+  }
+
+  .meet_from-anywhere-btn-div {
+    display: flex;
+    justify-content: left;
+    margin: 0 0 0px 0;
+  }
+  .meet_from-anywhere-sub-heading {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0px !important;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $color-black;
+    text-align: left;
+  }
+  .btn-size {
+    height: 50px !important;
+    line-height: 50px !important;
+    padding: 0 0rem !important;
+    width: 180px;
+  }
+  // VARIETY PLAN SECTION
+  .section {
+    &__variety-plan {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+  .variety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 2rem;
+    width: 100%;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .variety-item {
+    margin: 6rem 0 0 0;
+    height: 576px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .variety-header {
+    padding: 3rem 0 2rem 0;
+    margin: 0 0 4rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+
+  .variety-p {
+    font-weight: 300 !important;
+    font-size: 1.4rem !important;
+    line-height: 1.7rem !important;
+    color: $color-2;
+  }
+
+  .variety-item:hover .variety-header {
+    background-color: $color-primary;
+  }
+  .variety-item:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .variety-item:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .variety-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 2rem;
+  }
+  .variety-text-content span {
+    margin-left: 1rem;
+  }
+  .variety-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // TIMBO CAN BE USED WITH
+  .section {
+    &__timbo_used-with {
+      background-color: $color-60;
+      padding: 12rem 0;
+    }
+  }
+  .trusted-companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trusted-company {
+    margin: 0 2rem;
+  }
+  .trusted-companies img {
+    width: 100%;
+  }
+
+  // VIDEO CONFERENCING
+  .section {
+    &__video-conferencing {
+      background: linear-gradient(
+          to bottom right,
+          rgba(70, 128, 255, 0.1),
+          rgba(246, 147, 62, 0.1)
+        ),
+        url(./../../images/blue-video-rectangle.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+  }
+
+  .video-conferencing-div {
+    display: flex;
+    flex-direction: row;
+  }
+  .video-conferencing-text-div {
+    width: 500px;
+  }
+  .video-conferencing-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .video-conferencing-text-div {
+    width: 500px;
+    margin: 0;
+  }
+  .video-conferencing-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .video-conferencing-img {
+    width: 100%;
+    margin: 0;
+  }
+  .video-conferencing-heading {
+    text-align: left;
+  }
+  .video-conferencing-paragraph {
+    text-align: left;
+  }
+  .video-conferencing-btn-div {
+    display: flex;
+    justify-content: left;
+  }
+
+  .timbo-partners {
+    @include flex-row-jccenter-aicenter;
+    column-gap: 8rem;
+  }
+
+  .plans-sub-heading {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timbo-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .timbo-plan {
+    &:not(:last-child) {
+      border-right: 1px solid $color-32;
+    }
+    &:nth-child(1) {
+      padding-right: 4rem;
+    }
+    &:nth-child(2) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    &:nth-child(3) {
+      padding-left: 4rem;
+    }
+  }
+
+  .notification-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+  }
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  // GET ACCESS KEEP MESSAGES SECTION
+  .section {
+    &__get-access_keep-messages {
+      background-color: $color-60;
+      padding: 0;
+    }
+
+    &__features {
+      @include flex-row-jcbetween;
+      gap: 5rem;
+    }
+
+    &__clientele {
+      padding: 7rem 0 20rem;
+      background-color: $color-53;
+    }
+
+    &__samples {
+      padding: 0 0 50rem;
+      background-image: url(./../../images/pic46.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+
+    &__get-notified {
+      padding: 8rem;
+      background-color: $color-53;
+    }
+  }
+
+  .get-access-grid {
+    margin: 4rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-row-gap: 4rem;
+    grid-column-gap: 4rem;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  .get-access-item {
+    padding: 1rem 3rem;
+    height: 250px;
+    background-color: #2a2c35;
+    border-radius: 10px;
+  }
+  .get-access-title {
+    height: 60px;
+  }
+  .popular-logo {
+    border-radius: 4px;
+  }
+  .popular-icon {
+    color: var(--main-white);
+    font-size: 5rem;
+  }
+
+  .teams-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-35%);
+  }
+
+  .close-top-gap {
+    transform: translateY(-25rem);
+  }
+
+  .index-page__sub-heading {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .keep-messages__sub-heading {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .feature-img-holder {
+    max-width: 56rem;
+    max-height: 36rem;
+  }
+  .keep-msgs-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // transform: translateY(-35%);
+  }
+
+  .meet-heading-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: center !important;
+    width: 600px;
+    margin: 50px 0 20px 0;
+  }
+
+  .meet_from-anywhere-sub-heading {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0px !important;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $color-black;
+    text-align: center !important;
+    width: 600px;
+    margin: 0 0 20px 0;
+  }
+
+  // MEET FROM ANYWHERE SECTION
+  .section {
+    &__meet_from-anywhere {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .meet_from-anywhere-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+    border: solid 2px rgb(187, 184, 184);
+    border-radius: 10px;
+    padding: 6rem 6rem;
+  }
+  .meet_from-anywhere-img-div {
+    display: flex;
+    justify-content: center;
+  }
+  .meet_from-anywhere-text-div {
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .meet-anywhere-img {
+    width: 400px;
+  }
+  .meet_from-anywhere-btn-div {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+  }
+
+  // VARIETY PLAN SECTION
+  .section {
+    &__variety-plan {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+  .variety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 2rem;
+    width: 80%;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .variety-item {
+    margin: 6rem 0 0 0;
+    height: 500px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .variety-header {
+    padding: 3rem 0 2rem 0;
+    margin: 0 0 1rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+  .variety-p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-2;
+  }
+
+  .variety-item:hover .variety-header {
+    background-color: $color-primary;
+  }
+  .variety-item:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .variety-item:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .variety-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 1rem;
+  }
+  .variety-text-content span {
+    margin-left: 1rem;
+  }
+  .variety-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // VIDEO CONFERENCING
+  .section {
+    &__video-conferencing {
+      background: linear-gradient(
+          to bottom right,
+          rgba(70, 128, 255, 0.1),
+          rgba(246, 147, 62, 0.1)
+        ),
+        url(./../../images/blue-video-rectangle.svg);
+      // background-image: url(./../../images/landingPageHeaderBg.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+  }
+
+  .video-conferencing-div {
+    display: flex;
+  }
+  .video-conferencing-text-div {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px 0 !important;
+  }
+  .video-conferencing-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .video-conferencing-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .video-conferencing-heading {
+    text-align: left;
+    margin-top: 50px !important ;
+  }
+  .video-conferencing-paragraph {
+    text-align: left;
+  }
+  .video-conferencing-btn-div {
+    display: flex;
+    justify-content: left;
+  }
+
+  .timbo-partners {
+    @include flex-row-jccenter-aicenter;
+    column-gap: 8rem;
+  }
+
+  .plans-sub-heading {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timbo-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .timbo-plan {
+    &:not(:last-child) {
+      border-right: 1px solid $color-32;
+    }
+    &:nth-child(1) {
+      padding-right: 4rem;
+    }
+    &:nth-child(2) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    &:nth-child(3) {
+      padding-left: 4rem;
+    }
+  }
+
+  .notification-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+  }
+}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+}
+
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .get-access-grid {
+    width: 70%;
+    margin: 4rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+  }
+
+  // MEET FROM ANYWHERE SECTION
+  .section {
+    &__meet_from-anywhere {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .meet_from-anywhere-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+    border: solid 2px rgb(187, 184, 184);
+    border-radius: 10px;
+    padding: 6rem 6rem;
+  }
+  .meet_from-anywhere-img-div {
+    display: flex;
+    justify-content: center;
+  }
+  .meet-anywhere-img {
+    width: 400px;
+  }
+  .meet_from-anywhere-btn-div {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+  }
+
+  .meet-heading-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: center !important;
+  }
+
+  .meet_from-anywhere-sub-heading {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0px !important;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $color-black;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto 20px auto;
+  }
+
+  // VARIETY PLAN SECTION
+  .section {
+    &__variety-plan {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+  // .variety-grid {
+  //   width: 50%;
+  //   margin: 0 auto;
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  //   grid-column-gap: 4rem;
+  // }
+
+  .variety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-column-gap: 2rem;
+    margin: 0 auto;
+    width: 80% !important;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .variety-item {
+    margin: 6rem 0 0 0;
+    height: 576px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .variety-header {
+    padding: 3rem 0 2rem 0;
+
+    margin: 0 0 4rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+
+  .variety-p {
+    font-weight: 300 !important;
+    font-size: 1.4rem !important;
+    line-height: 1.7rem !important;
+    color: $color-2;
+  }
+
+  .variety-item:hover .variety-header {
+    background-color: $color-primary;
+  }
+  .variety-item:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .variety-item:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .variety-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 6rem;
+  }
+  .variety-text-content span {
+    margin-left: 1rem;
+  }
+  .variety-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // VIDEO CONFERENCING
+  .section {
+    &__video-conferencing {
+      background: linear-gradient(
+          to bottom right,
+          rgba(70, 128, 255, 0.1),
+          rgba(246, 147, 62, 0.1)
+        ),
+        url(./../../images/blue-video-rectangle.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+  }
+
+  .video-conferencing-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .video-conferencing-text-div {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .video-conferencing-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .video-conferencing-img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .video-conferencing-heading {
+    text-align: center;
+  }
+  .video-conferencing-paragraph {
+    text-align: center;
+  }
+  .video-conferencing-btn-div {
+    display: flex;
+    justify-content: center;
+  }
+  .timbo-partners {
+    @include flex-row-jccenter-aicenter;
+    column-gap: 8rem;
+  }
+
+  .plans-sub-heading {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timbo-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .timbo-plan {
+    &:not(:last-child) {
+      border-right: 1px solid $color-32;
+    }
+    &:nth-child(1) {
+      padding-right: 4rem;
+    }
+    &:nth-child(2) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    &:nth-child(3) {
+      padding-left: 4rem;
+    }
+  }
+
+  .notification-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .meet-heading-b {
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    color: $color-black;
+    text-align: left !important;
+    width: 600px;
+    margin: 50px 0 20px 0;
+  }
+
+  .meet_from-anywhere-sub-heading {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0px !important;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $color-black;
+    text-align: left;
+    width: 600px;
+    margin: 0 0 20px 0;
+  }
+}

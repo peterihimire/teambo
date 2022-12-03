@@ -1,0 +1,846 @@
+// FREQUENTLY ASKED QUESTION SECTION
+.question {
+  padding: 2rem 3rem 2rem 3rem;
+  border: 2px solid var(--clr-grey-special);
+  margin: 0rem auto 2rem auto;
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+  background-color: #2a2c35;
+  width: 100%;
+}
+.question h4 {
+  text-transform: none;
+  line-height: 1.5;
+  color: #547df0;
+}
+.question p {
+  color: white !important;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.question .question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question .question-header h4 {
+  margin-bottom: 0;
+}
+.btnQ {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-grey-special);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--clr-red-special);
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+
+.question-title {
+  cursor: pointer;
+}
+.section {
+  &__frequently-asked-questions {
+    background-color: $color-60;
+    padding: 12rem 0 8rem 0;
+  }
+}
+// MORE QUESTIONS SECTION
+.section {
+  &__more-questions {
+    background-color: white;
+    padding: 8rem 0;
+  }
+}
+
+.more-question-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more-question-contact-btn-div {
+  display: flex;
+  justify-content: center;
+}
+.call-now-text {
+  text-align: center;
+}
+// FLEXIBLE PRICING SECTION
+.section {
+  &__flexible-pricing {
+    background-color: #1c1f2e;
+    padding: 8rem 0;
+  }
+}
+.flexible-pricing__sub-heading {
+  max-width: 500px;
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
+.flexible-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+.get-access {
+  padding: 5rem 0 0 0;
+}
+.flexible-item {
+  margin: 6rem 0 0 0;
+  height: 500px;
+  background-color: #11131c;
+  border-radius: 10px;
+  position: relative;
+}
+.flexible-header {
+  padding: 3rem 0 2rem 0;
+
+  margin: 0 0 1rem 0;
+  border-radius: 10px 10px 50% 50%;
+}
+.flexible-p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: $color-2;
+}
+.flexible-item-with-switch:hover .flexible-header {
+  background-color: $color-primary;
+}
+.flexible-item-with-switch:hover .transparent-hover-primary {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+}
+.flexible-item-with-switch:hover {
+  transform: scale(1.07);
+  transition: all 0.3s linear;
+}
+.switch-invisible {
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem auto 0rem auto;
+}
+
+.flexible-text-content {
+  display: flex;
+  align-items: center;
+  margin: 0 0 2rem 0;
+  padding: 0rem 2rem;
+}
+.flexible-text-content span {
+  margin-left: 1rem;
+}
+.flexible-p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: $color-2;
+}
+.flexible-btn-div {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // centers the botton to the middle
+  transform: translate(-50%, -50%);
+}
+.variety-plan-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.got-answer-div-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.got-answers-text {
+  background-color: rgba(44, 96, 240, 0.2);
+  color: #547df0;
+  width: 160px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/***** iPAD *****/
+
+@media screen and (min-width: 768px) {
+  // FREQUENTLY ASKED QUESTION SECTION
+  .question {
+    padding: 2rem 3rem 2rem 3rem;
+    border: 2px solid var(--clr-grey-special);
+    margin: 0rem auto 2rem auto;
+    border-radius: 5px;
+    box-shadow: var(--light-shadow);
+    background-color: #2a2c35;
+    width: 600px;
+  }
+  .question h4 {
+    text-transform: none;
+    line-height: 1.5;
+    color: #547df0;
+  }
+  .question p {
+    color: white !important;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+  .question .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .question .question-header h4 {
+    margin-bottom: 0;
+  }
+  .btnQ {
+    background: transparent;
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    background: var(--clr-grey-special);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--clr-red-special);
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
+  }
+
+  .question-title {
+    cursor: pointer;
+  }
+  .section {
+    &__frequently-asked-questions {
+      background-color: $color-60;
+      padding: 14rem 0 8rem 0;
+    }
+  }
+  // MORE QUESTIONS SECTION
+  .section {
+    &__more-questions {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .more-questions-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+
+    // width: 300px;
+  }
+  .more-questions-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .more-questions-text-div {
+    width: 100%;
+  }
+  .more-question-phone {
+    display: flex;
+    align-items: center;
+  }
+  // FLEXIBLE PRICING SECTION
+  .section {
+    &__flexible-pricing {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+
+  .flexible-grid {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+  }
+
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .flexible-item {
+    margin: 6rem 0 0 0;
+    height: 500px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .flexible-header {
+    padding: 3rem 0 2rem 0;
+
+    margin: 0 0 1rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+  .flexible-p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-2;
+  }
+  .flexible-item-with-switch:hover .flexible-header {
+    background-color: $color-primary;
+  }
+  .flexible-item-with-switch:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+  .flexible-item-with-switch:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .flexible-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 4rem;
+  }
+  .flexible-text-content span {
+    margin-left: 1rem;
+  }
+  .flexible-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .got-answer-div-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .got-answers-text {
+    background-color: rgba(44, 96, 240, 0.2);
+    color: #547df0;
+    width: 160px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}
+
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  // FREQUENTLY ASKED QUESTION SECTION
+  .question {
+    padding: 2rem 3rem 2rem 3rem;
+    border: 2px solid var(--clr-grey-special);
+    margin: 0rem auto 2rem auto;
+    border-radius: 5px;
+    box-shadow: var(--light-shadow);
+    background-color: #2a2c35;
+    width: 800px;
+  }
+  .question h4 {
+    text-transform: none;
+    line-height: 1.5;
+    color: #547df0;
+  }
+  .question p {
+    color: white !important;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+  .question .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .question .question-header h4 {
+    margin-bottom: 0;
+  }
+  .btnQ {
+    background: transparent;
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    background: var(--clr-grey-special);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--clr-red-special);
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
+  }
+
+  .question-title {
+    cursor: pointer;
+  }
+  .section {
+    &__frequently-asked-questions {
+      background-color: $color-60;
+      padding: 16rem 0 8rem 0;
+    }
+  }
+  // MORE QUESTIONS SECTION
+  .section {
+    &__more-questions {
+      background-color: white;
+      padding: 8rem 0;
+    }
+  }
+  .more-questions-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-row-gap: 0rem;
+    grid-column-gap: 8rem;
+    // width: 300px;
+  }
+  .more-questions-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .call-now-text {
+    text-align: left;
+  }
+
+  .more-question-phone {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  .more-question-contact-btn-div {
+    display: flex;
+    justify-content: left;
+  }
+
+  // FLEXIBLE PRICING SECTION
+  .section {
+    &__flexible-pricing {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+  // .flexible-grid {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  //   grid-column-gap: 4rem;
+  //   width: 100%;
+  // }
+
+  .flexible-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 2rem;
+    width: 100%;
+  }
+
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .flexible-item {
+    margin: 6rem 0 0 0;
+    height: 576px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .flexible-header {
+    padding: 3rem 0 2rem 0;
+    margin: 0 0 4rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+  .flexible-p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-2;
+  }
+  .flexible-item-with-switch:hover .flexible-header {
+    background-color: $color-primary;
+  }
+  .flexible-item-with-switch:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+  .flexible-item-with-switch:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .flexible-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 2rem;
+  }
+  .flexible-text-content span {
+    margin-left: 1rem;
+  }
+  .flexible-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .got-answers-text {
+    background-color: rgba(44, 96, 240, 0.2);
+    color: #547df0;
+    width: 160px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .got-answer-div-text {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  // FLEXIBLE PRICING SECTION
+  .section {
+    &__flexible-pricing {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+  // .flexible-grid {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  //   grid-column-gap: 2rem;
+  // }
+
+  .flexible-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+    width: 80%;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .flexible-item {
+    margin: 6rem 0 0 0;
+    height: 500px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .flexible-header {
+    padding: 3rem 0 2rem 0;
+    margin: 0 0 1rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+  .flexible-p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-2;
+  }
+  .flexible-item-with-switch:hover .flexible-header {
+    background-color: $color-primary;
+  }
+  .flexible-item-with-switch:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+  .flexible-item-with-switch:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .flexible-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 4rem;
+  }
+  .flexible-text-content span {
+    margin-left: 1rem;
+  }
+  .flexible-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .got-answers-text {
+    background-color: rgba(44, 96, 240, 0.2);
+    color: #547df0;
+    width: 160px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .got-answer-div-text {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+}
+
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  // FLEXIBLE PRICING SECTION
+  .section {
+    &__flexible-pricing {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+  // .flexible-grid {
+  //   width: 50%;
+  //   margin: 0 auto;
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  //   grid-column-gap: 4rem;
+  // }
+
+  .flexible-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .flexible-item {
+    margin: 6rem 0 0 0;
+    height: 576px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .flexible-header {
+    padding: 3rem 0 2rem 0;
+    margin: 0 0 4rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+  .flexible-p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-2;
+  }
+  .flexible-item-with-switch:hover .flexible-header {
+    background-color: $color-primary;
+  }
+  .flexible-item-with-switch:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+  .flexible-item-with-switch:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .flexible-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 6rem;
+  }
+  .flexible-text-content span {
+    margin-left: 1rem;
+  }
+  .flexible-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .got-answers-text {
+    background-color: rgba(44, 96, 240, 0.2);
+    color: #547df0;
+    width: 160px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .got-answer-div-text {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+
+  // VARIETY PLAN SECTION
+  .section {
+    &__variety-plan {
+      background-color: #1c1f2e;
+      padding: 8rem 0;
+    }
+  }
+  .variety-grid {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 4rem;
+  }
+
+  // .variety-grid {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  //   grid-column-gap: 2rem;
+  //   margin: 0 auto;
+  //   width: 80% !important;
+  // }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .variety-item {
+    margin: 6rem 0 0 0;
+    height: 576px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .variety-header {
+    padding: 3rem 0 2rem 0;
+
+    margin: 0 0 4rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+
+  .variety-p {
+    font-weight: 300 !important;
+    font-size: 1.4rem !important;
+    line-height: 1.7rem !important;
+    color: $color-2;
+  }
+
+  .variety-item:hover .variety-header {
+    background-color: $color-primary;
+  }
+  .variety-item:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .variety-item:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .variety-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 6rem;
+  }
+  .variety-text-content span {
+    margin-left: 1rem;
+  }
+  .variety-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .variety-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+}

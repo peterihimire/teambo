@@ -1,0 +1,58 @@
+.link {
+  text-decoration: none;
+  transition: 0.3s ease;
+
+  &--primary {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-6;
+
+    &:hover {
+      color: $color-9;
+    }
+
+    @include responsive(small-phone) {
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  &--1 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-11;
+  }
+
+  &:hover {
+    color: $color-5;
+  }
+
+  &--2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-white;
+
+    &:hover {
+      color: $color-51;
+    }
+  }
+}
+
+.btn-link {
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-left: 2rem;
+}
+.btn-link:hover {
+  background-color: $color-primary;
+  color: white;
+  border: solid 1px $color-primary;
+}
+.btn-link-active {
+  background-color: $color-primary;
+  color: white;
+  border: solid 1px $color-primary;
+}

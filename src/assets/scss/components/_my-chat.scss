@@ -1,0 +1,29 @@
+.my-chat {
+  @include flex-row-jcend;
+  padding-left: 5rem;
+  margin-bottom: 2.5rem;
+
+  &__details {
+    margin-right: 1rem;
+    text-align: right;
+  }
+
+  &__name,
+  &__time {
+    display: inline-block;
+  }
+
+  &__name {
+  }
+  &__time {
+    margin-right: 1rem;
+  }
+
+  &__message {
+    background: $color-primary;
+    color: $color-white;
+    border-radius: 1.85rem 0 1.85rem 1.85rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+}

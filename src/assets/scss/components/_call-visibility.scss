@@ -1,0 +1,22 @@
+.call-visibility {
+  @include flex-row-jccenter-aicenter;
+  margin: 9rem 0 1rem;
+
+  &__status {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-3;
+    transition: 0.4s;
+
+    &.active {
+      color: $color-4;
+    }
+  }
+
+  & > * {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+}

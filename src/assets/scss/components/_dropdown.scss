@@ -1,0 +1,42 @@
+.dropdown {
+  &-top-nav {
+    border-radius: 0.8rem;
+    background-color: $color-white;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 2.5rem 0;
+    width: 20rem;
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    // height: 20rem;
+    z-index: 20;
+
+    &__link {
+      @include flex-row-aicenter;
+      column-gap: 1.2rem;
+      color: $color-33;
+      text-decoration: none;
+      font-size: 1.4rem;
+      padding: 1.5rem 1.8rem;
+      transition: 0.4s;
+
+      &:hover {
+        background-color: $color-58;
+      }
+      &:active {
+        background-color: $color-59;
+      }
+
+      &__icon {
+        fill: $color-primary;
+      }
+      &__icon-logout {
+        width: 2rem;
+        height: 2rem;
+      }
+      &__icon-logout-path {
+        fill: $color-primary;
+      }
+    }
+  }
+}

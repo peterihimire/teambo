@@ -1,0 +1,107 @@
+.message-input {
+  position: relative;
+  @include flex-row-jcbetween-aicenter;
+
+  &__emojibox {
+    position: absolute;
+
+    background-color: white;
+    z-index: 10;
+    bottom: 4rem;
+    right: 1rem;
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all ease;
+
+    &.emoji__active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__input {
+    flex-grow: 1;
+    padding: 1rem 1rem 1rem 0;
+    font-family: inherit;
+    border: none;
+    box-shadow: none;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-5;
+    box-shadow: none;
+    outline: none;
+    height: 3rem;
+
+    &::placeholder {
+      font-family: inherit;
+      color: $color-3;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none !important;
+    }
+  }
+
+  &__actions {
+    @include flex-row-aicenter;
+    &-extra {
+      margin-top: 1.5rem;
+
+      @include flex-row-aicenter;
+    }
+  }
+
+  &__file-upload {
+    position: relative;
+    margin-right: 0.5rem !important;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    .file-input {
+      opacity: 0;
+      border: 4px solid yellow;
+      // display: none;
+      position: absolute;
+      // position: absolute;
+    }
+  }
+
+  &__cta {
+    &:not(:last-child) {
+      margin-right: 2.3rem;
+    }
+  }
+}
+
+.file__previewer {
+  &-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    & > a {
+      text-decoration: none;
+    }
+  }
+  &-item {
+    padding: 1rem 2rem;
+    border: 1px solid $color-31;
+    background-color: $color-25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.btn {
+      cursor: pointer;
+    }
+    & > button {
+      flex: none;
+    }
+  }
+}

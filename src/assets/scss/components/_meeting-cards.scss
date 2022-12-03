@@ -1,0 +1,47 @@
+.meeting {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    padding: 5rem $dashboard-side-padding;
+
+    @include responsive(tab-land-small) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include responsive(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__card {
+    border-radius: 11px;
+    padding: 3.5rem;
+    @include flex-row-aicenter;
+    background: $color-6;
+    user-select: none;
+    cursor: pointer;
+
+    &:first-child {
+      background: $color-15;
+    }
+
+    &-icon {
+      max-width: 5.404rem;
+      max-height: 5.6rem;
+      margin-right: 2rem;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: $color-white;
+    }
+    &-text {
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: $color-white;
+    }
+  }
+}

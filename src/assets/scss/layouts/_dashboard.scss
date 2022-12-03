@@ -1,0 +1,42 @@
+.dashboard {
+  // Dashboard body
+  &__body {
+    // @include flex-row;
+  }
+
+  // Dashboard Main
+  &__main {
+    flex-grow: 1;
+    width: calc(100% - 10.4rem);
+    margin-left: 10.4rem;
+  }
+
+  // Dashboard Layout One
+  &__layout-one {
+    @include flex-row;
+
+    &__left {
+      top: 8.4rem;
+      position: sticky;
+      overflow-y: auto;
+      flex-basis: 44.1rem;
+      padding: $dashboard-layout-standard-padding;
+      height: calc(100vh - 8.4rem);
+      border-right: 1px solid $color-2;
+
+      &.color-2 {
+        background-color: $color-25;
+      }
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &__right {
+      flex-grow: 1;
+      padding: $dashboard-layout-standard-padding;
+    }
+  }
+}

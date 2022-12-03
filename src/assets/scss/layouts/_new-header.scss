@@ -1,0 +1,191 @@
+.newheader {
+  &__index-page {
+    width: 100%;
+    padding: 150px 0px 100px;
+    background: linear-gradient(
+        to bottom right,
+        rgba(70, 128, 255, 0.1),
+        rgba(246, 147, 62, 0.1)
+      ),
+      url(./../../images/hero-dark-bg.svg);
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  @media (max-width: 600px) {
+    padding: 200px 0px 250px;
+  }
+
+  @media (max-width: 700px) {
+    padding: 200px 0px 250px;
+  }
+
+  &__main-heading {
+    font-family: lato-bold;
+    font-style: normal;
+    color: $color-white;
+    margin: 0 0 2rem 0;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 86px;
+
+    @media (max-width: 600px) {
+      font-size: 42px;
+      line-height: 56px;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 42px;
+      line-height: 44px;
+    }
+  }
+  &__sub-heading {
+    color: $color-white;
+    width: 700px;
+    // margin: 0 auto;
+    margin: 0 auto 2rem auto;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+      line-height: 24px;
+      width: 100% !important;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 16px;
+      line-height: 24px;
+      width: 80%;
+    }
+  }
+
+  &__image-div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 100%;
+  }
+  .wrapper {
+    color: var(--white);
+
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h5 {
+      font-size: 18px;
+      font-family: Wesfy-Bold;
+      line-height: 26px;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 700px) {
+        // font-size: 34px;
+        text-align: center;
+      }
+      @media screen and (max-width: 600px) {
+        // font-size: 34px;
+        text-align: center;
+      }
+      @media screen and (max-width: 900px) {
+        // font-size: 34px;
+        text-align: center;
+      }
+    }
+
+    h3 {
+      font-size: 48px;
+      font-family: Wesfy-Bold;
+      line-height: 58px;
+      margin: 0.5rem 0 0.5rem 0;
+      // max-width: 450px;
+      // margin-bottom: 50px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 34px;
+        text-align: center;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 34px;
+        text-align: center;
+      }
+      @media screen and (max-width: 900px) {
+        font-size: 34px;
+        text-align: center;
+      }
+    }
+
+    > p {
+      max-width: 405px;
+      font-size: 18px;
+      line-height: 1.4;
+
+      @media screen and (max-width: 700px) {
+        // font-size: 34px;
+        text-align: center;
+        width: 100% !important;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 600px) {
+        // font-size: 34px;
+        text-align: center;
+        width: 100% !important;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 900px) {
+        // font-size: 34px;
+        text-align: center;
+        width: 100% !important;
+        margin: 0 auto;
+      }
+    }
+
+    .related {
+      position: absolute;
+      width: 288px;
+      height: 214px;
+      top: 280px;
+      right: 130px;
+      background: rgba(34, 34, 34, 0.65);
+      opacity: 0.85;
+      border-radius: 4px;
+      padding: 1.5rem;
+
+      @media screen and (max-width: 700px) {
+        top: 390px;
+        right: 250px;
+      }
+      @media screen and (max-width: 600px) {
+        top: 390px;
+        right: 50px !important;
+      }
+      @media screen and (max-width: 900px) {
+        top: 390px;
+        right: 250px;
+      }
+
+      h5 {
+        font-size: 24px;
+        line-height: 40px;
+        text-transform: capitalize;
+        font-family: Wesfy-Bold;
+        // color: wheat;
+      }
+
+      li {
+        font-size: 17px;
+        line-height: 27px;
+      }
+      @media screen and (max-width: 600px) {
+      }
+    }
+  }
+}

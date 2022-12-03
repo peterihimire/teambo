@@ -1,0 +1,795 @@
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #1c1f2e !important;
+  border-bottom: white solid 1px !important;
+}
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1.5em !important;
+  height: 1.5em !important;
+  display: inline-block;
+  font-size: 2rem !important;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: $color-primary;
+}
+.MuiStepLabel-label.MuiStepLabel-completed {
+  color: #2664ec !important;
+  font-weight: 500;
+  font-size: 1.6rem !important;
+}
+.MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+  color: #2664ec !important;
+  font-size: 1.2rem;
+  margin-top: 16px;
+  text-align: center;
+}
+.MuiStepIcon-text {
+  fill: #fff;
+  font-size: 1.2rem !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiStepConnector-alternativeLabel {
+  top: 12px;
+  left: calc(-50% + 20px) !important;
+  right: calc(50% + 20px) !important;
+  position: absolute;
+}
+
+.MuiStepConnector-root {
+  flex: 1 1 auto;
+}
+.horizontal-line {
+  margin: 10rem 0;
+}
+.horizontal-line-div {
+  padding: 0 9rem;
+}
+.billing-payment-heading {
+  padding: 10rem 0 10rem 0;
+}
+.billing-info-section {
+  display: flex;
+  flex-direction: column;
+}
+.billing-info-text {
+  margin: 0 5rem 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.billing-info-num {
+  background-color: #2664ec;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin: 0 5rem 0 0;
+}
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: #2664ec !important;
+}
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: #2664ec !important;
+}
+
+// PACKAGE PLAN SECTION
+.section {
+  &__package-plan {
+    background-color: #1c1f2e;
+    padding: 0 0 8rem 0;
+  }
+}
+.package-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.get-access {
+  padding: 5rem 0 0 0;
+}
+.package-item {
+  margin: 0rem;
+  width: 270px;
+  height: 500px;
+  background-color: #11131c;
+  border-radius: 10px;
+  position: relative;
+}
+.package-header {
+  padding: 3rem 0 2rem 0;
+
+  margin: 0 0 1rem 0;
+  border-radius: 10px 10px 50% 50%;
+}
+.variety-p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: $color-2;
+}
+
+.package-item:hover .package-header {
+  background-color: $color-primary;
+}
+.package-item:hover .transparent-hover-primary {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+}
+
+.switch-invisible {
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem auto 0rem auto;
+}
+
+.package-item:hover {
+  transform: scale(1.07);
+  transition: all 0.3s linear;
+}
+.package-text-content {
+  display: flex;
+  align-items: center;
+  margin: 0 0 2rem 0;
+  padding: 0rem 1rem;
+}
+.package-text-content span {
+  margin-left: 1rem;
+}
+.package-btn-div {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // centers the botton to the middle
+  transform: translate(-50%, -50%);
+}
+.package-plan-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verification-input {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem 0;
+}
+// FOR THE VERIFICATION CODE
+.styles_react-code-input__CRulA > input {
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  font-family: "Lato";
+  font-size: 20px;
+  // color: #525461;
+  color: white !important;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 0 !important;
+  -webkit-appearance: initial;
+  background-color: #1c1f2e !important;
+}
+.email-resend-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 15rem 0;
+}
+.email-resend-div .link {
+  color: $color-primary;
+}
+// CARD SECTION
+.card-radio-div {
+  margin: 0 0 2rem 0;
+  display: flex;
+}
+
+.single-radio {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 150px;
+
+  &.settings {
+    background: rgba(38, 100, 236, 0.2);
+  }
+}
+.single-radio-margin {
+  margin: 0 2rem 0 0;
+}
+.payment-card-img {
+  width: 100px;
+  height: auto;
+  padding: 0 0 0 1rem;
+}
+.stripe-img {
+  width: 70px;
+}
+.package-p {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: $color-white;
+  font-weight: bolder;
+}
+
+// THE MATERIAL UI BUTTON CSS
+MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #2664ec !important;
+}
+
+.MuiButton-contained {
+  background-color: #2664ec !important;
+  color: white !important;
+}
+
+.MuiButton-contained {
+  color: white !important;
+  background-color: #2664ec !important;
+}
+
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 15px 26px !important;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+// MAKES THE PACKAGE INPUT RETAIN THERE HOVER STATE WHEN CHECKED
+.package-input-element {
+  display: none;
+}
+
+.package-input-element:checked + .package-item .package-header {
+  background-color: $color-primary;
+}
+.package-input-element:checked + .package-item .transparent-hover-primary {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+}
+.package-input-element:checked + .package-item {
+  transform: scale(1.07);
+  transition: all 0.3s linear;
+}
+.package-input-label {
+  width: 100%;
+}
+/***** iPAD *****/
+@media screen and (min-width: 768px) {
+  .MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #1c1f2e !important;
+    border-bottom: white solid 1px !important;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    display: inline-block;
+    font-size: 2rem !important;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiStepIcon-root.MuiStepIcon-active {
+    color: $color-primary;
+  }
+  .MuiStepLabel-label.MuiStepLabel-completed {
+    color: #2664ec !important;
+    font-weight: 500;
+    font-size: 1.6rem !important;
+  }
+  .MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+    color: #2664ec !important;
+    font-size: 1.2rem;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .MuiStepIcon-text {
+    fill: #fff;
+    font-size: 1.2rem !important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiStepConnector-alternativeLabel {
+    top: 12px;
+    left: calc(-50% + 20px) !important;
+    right: calc(50% + 20px) !important;
+    position: absolute;
+  }
+
+  .MuiStepConnector-root {
+    flex: 1 1 auto;
+  }
+  .horizontal-line {
+    margin: 10rem 0;
+  }
+  .horizontal-line-div {
+    padding: 0 9rem;
+  }
+  .billing-payment-heading {
+    padding: 10rem 0 10rem 0;
+  }
+  .billing-info-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .billing-info-text {
+    margin: 0 5rem 0 0;
+    display: flex;
+    align-items: center;
+  }
+  .billing-info-num {
+    background-color: #2664ec;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin: 0 5rem 0 0;
+  }
+  .MuiStepIcon-root.MuiStepIcon-active {
+    color: #2664ec !important;
+  }
+  .MuiStepIcon-root.MuiStepIcon-completed {
+    color: #2664ec !important;
+  }
+
+  // PACKAGE PLAN SECTION
+  .section {
+    &__package-plan {
+      background-color: #1c1f2e;
+      padding: 0 0 8rem 0;
+    }
+  }
+  .package-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .package-item {
+    margin: 0rem;
+    width: 300px;
+    height: 500px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .package-header {
+    padding: 3rem 0 2rem 0;
+
+    margin: 0 0 1rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+  .variety-p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-2;
+  }
+
+  .package-item:hover .package-header {
+    background-color: $color-primary;
+  }
+  .package-item:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .package-item:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .package-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 1rem;
+  }
+  .package-text-content span {
+    margin-left: 1rem;
+  }
+  .package-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .package-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .verification-input {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+  }
+  // FOR THE VERIFICATION CODE
+  .styles_react-code-input__CRulA > input {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    font-family: "Lato";
+    font-size: 20px;
+    // color: #525461;
+    color: white !important;
+
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+    -webkit-appearance: initial;
+    background-color: #1c1f2e !important;
+  }
+  .email-resend-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15rem 0;
+  }
+  .email-resend-div .link {
+    color: $color-primary;
+  }
+  // CARD INFORMATION SECTION
+  .card-radio-div {
+    margin: 0 0 2rem 0;
+    display: flex;
+  }
+
+  .single-radio {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 180px;
+  }
+  .single-radio-margin {
+    margin: 0 2rem 0 0;
+  }
+  .payment-card-img {
+    width: 100px;
+    height: auto;
+    padding: 0 0 0 1rem;
+  }
+
+  .stripe-img {
+    width: 70px;
+  }
+  // MAKES THE PACKAGE INPUT RETAIN THERE HOVER STATE WHEN CHECKED
+  .package-input-element {
+    display: none;
+  }
+
+  .package-input-element:checked + .package-item .package-header {
+    background-color: $color-primary;
+  }
+  .package-input-element:checked + .package-item .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+  .package-input-element:checked + .package-item {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .package-input-label {
+    width: 100%;
+  }
+}
+/***** LAPTOP *****/
+@media (min-width: 993px) {
+  .MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #1c1f2e !important;
+    border-bottom: white solid 1px !important;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    display: inline-block;
+    font-size: 2rem !important;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiStepIcon-root.MuiStepIcon-active {
+    color: $color-primary;
+  }
+  .MuiStepLabel-label.MuiStepLabel-completed {
+    color: #2664ec !important;
+    font-weight: 500;
+    font-size: 1.6rem !important;
+  }
+  .MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+    color: #2664ec !important;
+    font-size: 1.2rem;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .MuiStepIcon-text {
+    fill: #fff;
+    font-size: 1.2rem !important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiStepConnector-alternativeLabel {
+    top: 12px;
+    left: calc(-50% + 20px) !important;
+    right: calc(50% + 20px) !important;
+    position: absolute;
+  }
+  // MATERAIL UI SWITCH-CHECKED-BUTTON COLOR
+  .MuiSwitch-colorPrimary.Mui-checked {
+    color: #2664ec !important;
+  }
+  .MuiStepConnector-root {
+    flex: 1 1 auto;
+  }
+  .horizontal-line {
+    margin: 10rem 0;
+  }
+  .horizontal-line-div {
+    padding: 0 9rem;
+  }
+  .billing-payment-heading {
+    padding: 10rem 0 10rem 0;
+  }
+  .billing-info-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .billing-info-text {
+    margin: 0 15rem 0 0;
+    display: flex;
+    align-items: center;
+  }
+  .billing-info-num {
+    background-color: #2664ec;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin: 0 5rem 0 0;
+  }
+  .MuiStepIcon-root.MuiStepIcon-active {
+    color: #2664ec !important;
+  }
+  .MuiStepIcon-root.MuiStepIcon-completed {
+    color: #2664ec !important;
+  }
+
+  // PACKAGE PLAN SECTION
+  .section {
+    &__package-plan {
+      background-color: #1c1f2e;
+      padding: 0 0 8rem 0;
+    }
+  }
+  .package-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .get-access {
+    padding: 5rem 0 0 0;
+  }
+  .package-item {
+    margin: 0rem;
+    width: 380px;
+    height: 550px;
+    background-color: #11131c;
+    border-radius: 10px;
+    position: relative;
+  }
+  .package-header {
+    padding: 3rem 0 2rem 0;
+    margin: 0 0 4rem 0;
+    border-radius: 10px 10px 50% 50%;
+  }
+  .variety-p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-2;
+  }
+
+  .package-item:hover .package-header {
+    background-color: $color-primary;
+  }
+  .package-item:hover .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  .switch-invisible {
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .package-item:hover {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .package-text-content {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 0rem 6rem;
+  }
+  .package-text-content span {
+    margin-left: 1rem;
+  }
+  .package-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // centers the botton to the middle
+    transform: translate(-50%, -50%);
+  }
+  .package-plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .verification-input {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+  }
+  // FOR THE VERIFICATION CODE
+  .styles_react-code-input__CRulA > input {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    font-family: "Lato";
+    font-size: 20px;
+    // color: #525461;
+    color: white !important;
+
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+    -webkit-appearance: initial;
+    background-color: #1c1f2e !important;
+  }
+  .email-resend-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15rem 0;
+  }
+  .email-resend-div .link {
+    color: $color-primary;
+  }
+  // CARD SECTION
+  .card-radio-div {
+    margin: 0 0 2rem 0;
+    display: flex;
+    color: #2ecc71;
+  }
+
+  .single-radio {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 180px;
+  }
+  .single-radio-margin {
+    margin: 0 2rem 0 0;
+  }
+  .payment-card-img {
+    width: 100px;
+    height: auto;
+    padding: 0 0 0 1rem;
+  }
+  .stripe-img {
+    width: 70px;
+  }
+
+  // MAKES THE PACKAGE INPUT RETAIN THERE HOVER STATE WHEN CHECKED
+  .package-input-element {
+    display: none;
+  }
+
+  .package-input-element:checked + .package-item .package-header {
+    background-color: $color-primary;
+  }
+  .package-input-element:checked + .package-item .transparent-hover-primary {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+  .package-input-element:checked + .package-item {
+    transform: scale(1.07);
+    transition: all 0.3s linear;
+  }
+  .package-input-label {
+    width: 100%;
+  }
+}

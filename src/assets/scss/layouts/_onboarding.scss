@@ -1,0 +1,45 @@
+.onboarding {
+  &-top-nav {
+    border-bottom: 1px solid $color-1;
+    padding: {
+      top: 2rem;
+      bottom: 2rem;
+    }
+
+    &__content {
+      @include flex-row-jcbetween-aicenter;
+    }
+  }
+
+  &-content-layout {
+    text-align: center;
+    padding: {
+      top: 10rem;
+      bottom: 10rem;
+    }
+
+    @include responsive(small-phone) {
+      padding: {
+        top: 7rem;
+        bottom: 7rem;
+      }
+    }
+  }
+
+  &__icon {
+    max-width: 8rem;
+    max-height: 8rem;
+
+    @include responsive(small-phone) {
+      max-width: 5rem;
+      max-height: 5rem;
+    }
+  }
+
+  &__icon-2 {
+    @include responsive(small-phone) {
+      max-width: 20rem !important;
+      max-height: 18.1rem !important;
+    }
+  }
+}

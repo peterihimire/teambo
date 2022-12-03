@@ -1,0 +1,27 @@
+.divider {
+  @include flex-row-jccenter-aicenter;
+  &__text {
+    position: relative;
+    @include flex-row-aicenter;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-3;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 7.2rem;
+      height: 2px;
+      background-color: $color-10;
+    }
+
+    &::before {
+      right: 200%;
+    }
+    &::after {
+      left: 200%;
+    }
+  }
+}

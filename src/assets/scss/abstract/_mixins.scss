@@ -1,0 +1,292 @@
+// ******** Fix overflow ********
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// ******** Center content of an element horizontally and vertically ********
+@mixin centerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centerMargin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ******** Media query manager ********
+/*
+Phone -- 0-600px
+Tablet-portrait -- 600px-900px
+Tablet-landscape -- 900px-1200px
+Big-desktop -- 1800+ px
+
+Breakpoint choices
+phone
+tab-port
+tab-land
+big-desktop
+
+*/
+// 1em = 16px
+@mixin responsive($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 28.75em) {
+      @content;
+    } // 460px
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } // 900px
+  }
+
+  @if $breakpoint == tab-land-small {
+    @media only screen and (max-width: 65.31em) {
+      @content;
+    } // 1045px
+  }
+
+  @if $breakpoint == tab-land-mini {
+    @media only screen and (max-width: 66.6em) {
+      @content;
+    } // 1065px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } // 1200px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } // 1800px
+  }
+}
+
+// ******** Flexbox classes ********
+// Flex row
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-row-aicenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin flex-row-aiend {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+@mixin flex-row-jcbetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin flex-row-jccenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin flex-row-jcstart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@mixin flex-row-jcend {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+@mixin flex-row-jcend-aicenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin flex-row-jcbetween-aicenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-row-jcbetween-aistart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@mixin flex-row-jcbetween-aiend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin flex-row-jccenter-aicenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-rowwrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin flex-rowwrap-aicenter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@mixin flex-rowwrap-jcbetween {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+@mixin flex-rowwrap-jcbetween-aistart {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flex-rowwrap-jcbetween-aicenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-rowwrap-jcbetween-aiend {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin flex-rowwrap-jcaround-aicenter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-rowwrap-jccenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+@mixin flex-rowwrap-jccenter-aicenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+// Flex column
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-column-jcbetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@mixin flex-column-jcbetween-aicenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-column-jcend {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@mixin flex-column-aicenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-column-jcstart-aistart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin flex-column-jccenter-aicenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// ******** Grid classes ********
+// @mixin grid-row {
+//   display: grid;
+//   grid-template-columns: ;
+// }
+
+@mixin gradient-background {
+  // background: linear-gradient(
+  //   270deg,
+  //   rgba(0, 204, 240, 0.201814) 0%,
+  //   rgba(251, 29, 138, 0.2) 100%
+  // );
+  background-image: url("../img/photo-22.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include responsive(phone) {
+    background-position: top left;
+  }
+}
+
+@mixin card-background {
+  background-color: $color-6;
+  background-image: url("../img/photo-55.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@mixin account-background {
+  background-color: $color-6;
+  background-image: url("../img/photo-63.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}

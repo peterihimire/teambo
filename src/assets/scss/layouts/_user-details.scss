@@ -1,0 +1,35 @@
+.user-details {
+  &__container {
+    background-color: $color-white;
+    padding-bottom: 6rem;
+  }
+  &__top {
+    @include flex-row-jcbetween-aiend;
+    padding: 3rem;
+  }
+  &__image {
+    width: 6.1rem;
+    height: 6.1rem;
+    border-radius: 50%;
+  }
+
+  // For User personal details
+  &__data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem 2rem;
+    animation: slideFromBottom 0.6s ease;
+    padding-bottom: 4rem;
+  }
+
+  &__data-2 {
+    animation: slideFromBottom 0.6s ease;
+    padding-bottom: 4rem;
+  }
+
+  &__about {
+    padding-top: 4rem;
+    border-top: 1px solid $color-47;
+    animation: slideFromBottom 0.6s ease;
+  }
+}

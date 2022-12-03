@@ -1,0 +1,15 @@
+.billing-details {
+  &__container {
+    background: $color-white;
+    border: 1px solid $color-2;
+    border-radius: 0.8rem;
+  }
+
+  &__row {
+    @include flex-row-jcbetween-aicenter;
+    padding: 2rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-2;
+    }
+  }
+}

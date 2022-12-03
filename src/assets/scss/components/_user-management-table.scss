@@ -1,0 +1,107 @@
+.um-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 2em 1em;
+  justify-content: space-between;
+  .page-size-select {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    &:last-child {
+      margin-left: 10px;
+    }
+    > aside {
+      flex: 6;
+    }
+    .um-select-box {
+      flex: 6;
+    }
+    > select {
+      flex: 8;
+      font-size: 1em;
+      > option {
+        background: #c5c5c5 !important;
+      }
+    }
+  }
+  .umb-wrapper {
+    display: flex;
+    flex: 6;
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+
+    @media screen and (max-width: 700px) {
+      font-size: 18px;
+    }
+
+    li {
+      margin-right: 10px;
+      background: transparent;
+      width: fit-content;
+      cursor: pointer;
+      border: 1px solid rgba(53, 52, 52, 0.6);
+      padding: 5px;
+      border-radius: 10px;
+
+      &:last-of-type {
+        margin-right: 0px;
+      }
+
+      @media screen and (max-width: 700px) {
+        margin-bottom: 10px;
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+
+      > a {
+        height: fit-content;
+        width: fit-content;
+        font-size: 20px;
+        font-family: Proxima-Medium;
+        color: #4d4d4d;
+      }
+
+      &.paginate-active {
+        cursor: not-allowed;
+        background-color: rgba(154, 245, 118, 0.87);
+        a {
+          color: rgb(136, 135, 135) !important;
+          font-weight: bold;
+        }
+      }
+
+      &.paginate-disabled {
+        cursor: not-allowed;
+
+        &.paginate-next,
+        &.paginate-previous {
+          a {
+            color: rgb(136, 135, 135) !important;
+          }
+        }
+      }
+
+      &.paginate-previous,
+      &.paginate-next {
+        height: fit-content;
+
+        a {
+          font-size: 18px;
+          color: var(--black) !important;
+        }
+      }
+    }
+  }
+}

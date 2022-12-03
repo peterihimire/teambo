@@ -1,0 +1,427 @@
+// body {
+//   font-family: timbo-regular, "Baloo Tammudu 2";
+//   font-size: 1.6rem;
+//   line-height: 1.7rem;
+//   font-weight: 500;
+//   // color: $color-6;
+// }
+body {
+  font-family: lato;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  font-weight: 500;
+  // color: $color-6;
+}
+
+// Headings
+.head {
+  &-1 {
+    font-size: 3.3rem;
+    line-height: 4.2rem;
+    color: $color-4;
+
+    @include responsive(small-phone) {
+      font-size: 2.3rem;
+      line-height: 3.2rem;
+    }
+  }
+  &-2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: $color-4;
+
+    @include responsive(small-phone) {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+
+    &--sm {
+      @include responsive(small-phone) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  &-3 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: $color-5;
+  }
+
+  &-4 {
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    color: $color-4;
+  }
+
+  &-5 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-3;
+  }
+
+  &-6 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $color-4;
+  }
+
+  &-7 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-5;
+  }
+
+  &-8 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-5;
+  }
+
+  &-9 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: $color-4;
+  }
+
+  &-10 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: $color-5;
+  }
+  &-11 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color-5;
+  }
+  &-12 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color-3;
+  }
+  &-13 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: $color-16;
+  }
+  &-14 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-4;
+  }
+  &-15 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-3;
+  }
+  &-16 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-4;
+  }
+  &-17 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-4;
+  }
+  &-18 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    // line-height: 2.4rem;
+    color: $color-5;
+  }
+  &-19 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $color-5;
+  }
+  &-20 {
+    @extend .head-16;
+    color: $color-3;
+  }
+  &-21 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-35;
+  }
+  &-22 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: $color-35;
+  }
+  &-23 {
+    @extend .head-21;
+    font-weight: 600;
+    color: $color-white;
+  }
+  &-24 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $color-black;
+  }
+  &-25 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: $color-41;
+  }
+  &-26 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: $color-45;
+  }
+  &-27 {
+    // font-family: recoleta;
+    // font-family: lato-bold;
+    // font-style: normal;
+    // font-weight: bold;
+    // font-size: 5.6rem;
+    // line-height: 7.6rem;
+    // color: $color-white;
+  }
+  &-27b {
+    // font-family: recoleta;
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 7.6rem;
+    color: $color-black;
+  }
+  &-28 {
+    // font-family: recoleta;
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.4rem;
+    background: -webkit-linear-gradient(
+      269.71deg,
+      #ffa360 1.42%,
+      #ff00b8 99.87%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-29 {
+    // font-family: recoleta;
+    font-family: lato-bold;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.4rem;
+    color: $color-white;
+
+    @include responsive(tab-port) {
+      font-size: 2.5rem;
+      line-height: 3.4rem;
+    }
+    @include responsive(phone) {
+      // font-size: 4rem;
+      // line-height: 5.4rem;
+    }
+  }
+  &-30 {
+    // font-family: recoleta;
+    font-family: lato-bold;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: $color-white;
+  }
+  &-31 {
+    @extend .head-29;
+    font-size: 4.6rem;
+    line-height: 6.3rem;
+  }
+  &-32 {
+    @extend .head-30;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  &-33 {
+    @extend .head-30;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  &-34 {
+    // font-family: recoleta;
+    font-family: lato-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7.2rem;
+    line-height: 7.6rem;
+    color: $color-white;
+  }
+}
+
+// paragraphs
+.p {
+  &-1 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-3;
+  }
+  &-2 {
+    @extend .p-1;
+    font-weight: normal;
+  }
+  &-3 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color-3;
+  }
+  &-4 {
+    @extend .p-2;
+    color: $color-26;
+  }
+  &-5 {
+    @extend .p-2;
+    color: $color-16;
+  }
+  &-6 {
+    @extend .p-1;
+    color: $color-4;
+  }
+  &-7 {
+    @extend .p-3;
+    font-weight: bold;
+  }
+  &-8 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-6;
+  }
+  &-9 {
+    @extend .p-6;
+    font-weight: normal;
+  }
+  &-10 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-33;
+  }
+  &-11 {
+    @extend .p-3;
+    color: $color-39;
+  }
+  &-12 {
+    font-weight: normal;
+    font-size: 1.05rem;
+    line-height: 1.3rem;
+    color: $color-black;
+  }
+  &-13 {
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    color: $color-40;
+    vertical-align: text-top;
+  }
+  &-14 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $color-46;
+  }
+  &-15 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-48;
+  }
+  &-16 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #15202b;
+  }
+  &-17 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $color-50;
+  }
+  
+  &-18 {
+    @extend .p-17;
+    font-weight: 500;
+  }
+  &-19 {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: $color-white;
+  }
+  &-20 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $color-2;
+  }
+  &-21 {
+    @extend .p-20;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  &-21b {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $color-61;
+  }
+  &-22 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.011em;
+    color: $color-white;
+  }
+  &-23 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: $color-3;
+  }
+  &-24 {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0px !important;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $color-black;
+  }
+  &-success {
+    color: $color-13;
+  }
+  &-danger {
+    color: $color-50;
+  }
+}
+
+// links
